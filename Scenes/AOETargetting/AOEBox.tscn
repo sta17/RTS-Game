@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bskvf5t4m05cl"]
+
+[ext_resource type="Script" path="res://Scripts/Map Objects/AOETargetting.gd" id="1_usyto"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_7hytn"]
+
+[node name="Area3D" type="Area3D" node_paths=PackedStringArray("colliderShape")]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("1_usyto")
+colliderShape = NodePath("CollisionShape3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_7hytn")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

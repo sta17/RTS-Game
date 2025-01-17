@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://6tiqj4iuhjkp"]
+
+[ext_resource type="Texture2D" uid="uid://chen7r4mm43nk" path="res://Assets/Mine/UI/Boots.png" id="1_gctb3"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_ptf5i"]
+
+[resource]
+script = ExtResource("2_ptf5i")
+name = "Feets"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_gctb3")

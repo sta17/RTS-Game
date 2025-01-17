@@ -1,0 +1,37 @@
+[gd_resource type="Theme" load_steps=7 format=3 uid="uid://drqxr24ly24mt"]
+
+[ext_resource type="StyleBox" uid="uid://42b3jpp4b5dw" path="res://Godot Setting Files/Light Grey.stylebox" id="1_00c0t"]
+[ext_resource type="Texture2D" uid="uid://dewlhn6xtp463" path="res://Assets/Public Domain/Items/Frame.png" id="1_71o21"]
+[ext_resource type="Texture2D" uid="uid://cxcvtv4ca6qx6" path="res://Assets/Mine/UI/Frame 2.png" id="3_dx2cs"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_475n0"]
+texture = ExtResource("1_71o21")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vkmjr"]
+texture = ExtResource("3_dx2cs")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_axpc3"]
+texture = ExtResource("1_71o21")
+texture_margin_left = 6.0
+texture_margin_top = 6.0
+texture_margin_right = 6.0
+texture_margin_bottom = 6.0
+
+[resource]
+Button/colors/font_outline_color = Color(0, 0, 0, 1)
+Button/constants/outline_size = 4
+Button/styles/focus = null
+Button/styles/hover = ExtResource("1_00c0t")
+Button/styles/normal = SubResource("StyleBoxTexture_475n0")
+Button/styles/pressed = SubResource("StyleBoxTexture_vkmjr")
+Label/colors/font_outline_color = Color(0, 0, 0, 1)
+Label/constants/outline_size = 4
+Panel/styles/panel = SubResource("StyleBoxTexture_axpc3")

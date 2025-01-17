@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Unit_data" load_steps=3 format=3 uid="uid://d2vyevulcc1wk"]
+
+[ext_resource type="Script" path="res://Scripts/Map Objects/unit_data.gd" id="1_tvkqb"]
+[ext_resource type="Texture2D" uid="uid://dvjt46jrjhx2d" path="res://Assets/Mine/Icons/F 64.png" id="2_4hl2j"]
+
+[resource]
+script = ExtResource("1_tvkqb")
+unit_icon = ExtResource("2_4hl2j")
+name = "Test Unit F"
+hp = 5.0
+hp_regen = 0.0
+aether = 0.0
+aether_regen = 0.0
+attack = 1.0
+attack_cooldown = 3.0
+attack_range = 2.0
+defense = 1.0
+speed = 3.0
+color = Color(0.980392, 1, 0, 1)

@@ -1,0 +1,60 @@
+[gd_scene load_steps=8 format=3 uid="uid://d3wfs7o6gfrui"]
+
+[ext_resource type="Script" path="res://Scripts/Unit_Handler.gd" id="1_6osuj"]
+[ext_resource type="Texture2D" uid="uid://dfd3pvrdigbx3" path="res://Assets/Mine/UI/ui_selct_dragbox01.png" id="2_3ycof"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_wg6x7"]
+radius = 0.6
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ypvqj"]
+albedo_color = Color(1, 1, 0.0705882, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_yd40t"]
+material = SubResource("StandardMaterial3D_ypvqj")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jh1gp"]
+albedo_color = Color(1, 1, 0.0705882, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_o1rxj"]
+material = SubResource("StandardMaterial3D_jh1gp")
+top_radius = 0.125
+bottom_radius = 0.25
+height = 1.0
+
+[node name="Generic Test Unit" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_layer = 10
+collision_mask = 2
+script = ExtResource("1_6osuj")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_wg6x7")
+
+[node name="Graphic" type="MeshInstance3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+mesh = SubResource("CylinderMesh_yd40t")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Graphic"]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0.5, 0.5)
+mesh = SubResource("CylinderMesh_o1rxj")
+
+[node name="selected" type="Sprite3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.8, 0)
+modulate = Color(0, 1, 0.0666667, 0.294118)
+pixel_size = 0.15
+axis = 1
+texture = ExtResource("2_3ycof")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_height_offset = -1.0
+avoidance_enabled = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 1.1
+autostart = true
+
+[node name="RayCast3D" type="RayCast3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+collision_mask = 2
+debug_shape_thickness = 5

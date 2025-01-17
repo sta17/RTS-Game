@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://cig5m2ajgwdxf"]
+
+[ext_resource type="Texture2D" uid="uid://bnwl3wjvlodia" path="res://Assets/Public Domain/Kenney/64x64/cross.png" id="1_6wxu1"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_ci25y"]
+
+[resource]
+script = ExtResource("2_ci25y")
+name = "Cancel"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_6wxu1")

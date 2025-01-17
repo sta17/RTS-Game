@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://eqcekfrfidl8"]
+
+[ext_resource type="Texture2D" uid="uid://8ii6hdoyc6p4" path="res://Assets/Public Domain/Kenney/64x64/tool_sword_b.png" id="1_nvaln"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_7pncm"]
+
+[resource]
+script = ExtResource("2_7pncm")
+name = "Attack"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_nvaln")

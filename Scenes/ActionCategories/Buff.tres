@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://c2bstxo5wkxch"]
+
+[ext_resource type="Texture2D" uid="uid://eo5twr8kdogo" path="res://Assets/Public Domain/Kenney/64x64/crown_a.png" id="1_i5rxd"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_lu5vn"]
+
+[resource]
+script = ExtResource("2_lu5vn")
+name = "Buff"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_i5rxd")

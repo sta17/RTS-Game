@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://llai6kkipmee"]
+
+[ext_resource type="Texture2D" uid="uid://dpp6sn0xgb7oa" path="res://Assets/Mine/UI/ui_selct_circle02.png" id="1_t3x2g"]
+[ext_resource type="Script" path="res://Scripts/Selected.gd" id="2_jurxo"]
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_mwdmk"]
+
+[node name="selected" type="Sprite3D"]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0.8, 0)
+modulate = Color(0, 1, 0.0666667, 0.294118)
+pixel_size = 0.15
+axis = 1
+texture = ExtResource("1_t3x2g")
+script = ExtResource("2_jurxo")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"Selection": SubResource("AnimationLibrary_mwdmk")
+}

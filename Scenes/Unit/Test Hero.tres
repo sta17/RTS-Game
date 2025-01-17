@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="Hero_data" load_steps=11 format=3 uid="uid://5lmf3fbyl5gt"]
+
+[ext_resource type="Script" path="res://Scripts/Map Objects/hero_data.gd" id="1_0q6rg"]
+[ext_resource type="Script" path="res://Scripts/UI/action_data.gd" id="1_efxy4"]
+[ext_resource type="Resource" uid="uid://0cvlkl6yg4vd" path="res://Scenes/ActionsAndSpells/AttackMove.tres" id="1_sw3dg"]
+[ext_resource type="Texture2D" uid="uid://dt2j6v2js7x63" path="res://Assets/Mine/Icons/H 64.png" id="2_nsj43"]
+[ext_resource type="Resource" uid="uid://c3ljhhnh1hydv" path="res://Scenes/ActionsAndSpells/Move.tres" id="2_ut37c"]
+[ext_resource type="Resource" uid="uid://q0xys5nxsnh" path="res://Scenes/ActionsAndSpells/HoldPosition.tres" id="3_mcreb"]
+[ext_resource type="Resource" uid="uid://c6aumkwgbt3te" path="res://Scenes/ActionsAndSpells/Patrol.tres" id="4_xm8bd"]
+[ext_resource type="Resource" uid="uid://bp4vcye3qv6ji" path="res://Scenes/ActionsAndSpells/Stop.tres" id="5_hilla"]
+[ext_resource type="Resource" uid="uid://bjy0x1xihq48f" path="res://Scenes/ActionsAndSpells/GainHeroAbility.tres" id="6_u56yr"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="9_ejdcy"]
+
+[resource]
+script = ExtResource("1_0q6rg")
+title = "Start"
+body_start = 10.0
+body_increase_per_level = 2.0
+finesse_start = 10.0
+finesse_increase_per_level = 2.0
+mind_start = 10.0
+mind_increase_per_level = 2.0
+unit_icon = ExtResource("2_nsj43")
+name = "Test Hero"
+hp = 50.0
+hp_regen = 1.0
+aether = 50.0
+aether_regen = 1.0
+attack = 5.0
+attack_cooldown = 1.0
+attack_range = 5.0
+defense = 5.0
+speed = 4.0
+color = Color(0, 0.992157, 0, 1)
+tooltip = ""
+actions = Array[ExtResource("1_efxy4")]([ExtResource("1_sw3dg"), ExtResource("2_ut37c"), ExtResource("3_mcreb"), ExtResource("4_xm8bd"), ExtResource("5_hilla"), ExtResource("6_u56yr")])
+unitTags = Array[ExtResource("9_ejdcy")]([])

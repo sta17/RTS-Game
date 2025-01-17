@@ -1,0 +1,348 @@
+Ideas: potentially add some portal/gates and explore other parts of the world?
+
+- General
+https://www.hiveworkshop.com/threads/the-seven-kingdoms-of-human.349190/
+
+- Some Norse Flavoured,
+https://no.wikipedia.org/wiki/Ting_(forsamling)
+https://no.wikipedia.org/wiki/Berserk
+https://no.wikipedia.org/wiki/Skald
+https://no.wikipedia.org/wiki/Leidang
+https://no.wikipedia.org/wiki/Hov_(kultplass)
+https://no.wikipedia.org/wiki/Blot
+https://no.wikipedia.org/wiki/Hird_og_hirdmenn
+https://no.wikipedia.org/wiki/Gode
+https://en.wikipedia.org/wiki/Lawspeaker
+	- kingdoms and republics.
+https://en.wikipedia.org/wiki/V%C3%B6r%C3%B0r?useskin=vector
+https://en.wikipedia.org/w/index.php?title=Seeress_(Germanic)&useskin=vector
+	- Use Staffs and wands as symbols of offices?
+https://no.wikipedia.org/wiki/Diser?useskin=vector
+https://en.wikipedia.org/wiki/D%C3%ADs?useskin=vector
+https://en.wikipedia.org/wiki/Leidang?useskin=vector
+https://en.wikipedia.org/wiki/Housecarl?useskin=vector
+https://en.wikipedia.org/wiki/Hird?useskin=vector
+https://no.wikipedia.org/wiki/Hird_og_hirdmenn
+https://no.wikipedia.org/wiki/Herse
+	- Fornavn:
+		- Hauk, Erlend, Thorgeir, Eskil, Skapti, Snorri, Olav, Torgny, Bjørn 
+	- Etternavn:
+		- Graatop, Ravaldsson, Alvsson, Lysne, Stallare
+
+	- Rosendal, Rosenkrans
+	- Disaros
+	- Place Name Inspiration:
+		- Nidaros
+		- Bjorgvin
+		- Stafangr
+	- Elements:
+		- Vin,
+			- meadow
+		- Oss
+			- the mouth of a river
+		- Angr
+			- inlet, bay
+
+- Some Greek Flavoured,
+https://en.wikipedia.org/wiki/Koinon
+https://en.wikipedia.org/wiki/Tagus_(title)
+https://en.wikipedia.org/wiki/Polemarch
+https://en.wikipedia.org/wiki/Talos?useskin=vector
+https://en.wikipedia.org/wiki/Delphi?useskin=vector
+https://en.wikipedia.org/wiki/Oracle?useskin=vector
+
+- some byzantine flavours?
+https://en.wikipedia.org/wiki/Cataphract
+https://en.wikipedia.org/wiki/Varangian_Guard
+https://en.wikipedia.org/wiki/Greek_fire
+	- Varangian Guard Flavour?
+	- Catahracts,
+	- Greek fire based weapons.
+https://en.wikipedia.org/wiki/Eastern_Orthodox_Church?useskin=vector#Sin,_salvation,_and_the_incarnation
+https://en.wikipedia.org/wiki/Eastern_Orthodox_view_of_sin?useskin=vector
+https://en.wikipedia.org/wiki/Eastern_Orthodox_Church?useskin=vector#Eschatology
+https://en.wikipedia.org/wiki/Hesychasm?useskin=vector
+
+
+- Some Celtic and Gaul Flavoured,
+https://en.wikipedia.org/wiki/High_King_of_Ireland
+https://en.wikipedia.org/wiki/High_king
+https://en.wikipedia.org/wiki/Bard
+https://en.wikipedia.org/wiki/Vates
+https://en.wikipedia.org/wiki/Druid
+https://en.wikipedia.org/wiki/Seancha%C3%AD?useskin=vector
+https://en.wikipedia.org/wiki/Tigerna?useskin=vector
+https://en.wikipedia.org/wiki/Early_Irish_astrology?useskin=vector
+https://en.wikipedia.org/wiki/White_Rod?useskin=vector
+https://en.wikipedia.org/wiki/Tigerna?useskin=vector
+https://en.wikipedia.org/wiki/R%C3%AD?useskin=vector
+https://en.wikipedia.org/wiki/Gaelic_Ireland?useskin=vector#Settlements_and_architecture
+
+- Anglo-Saxon Influence
+https://en.wikipedia.org/wiki/Fyrd?useskin=vector
+https://en.wikipedia.org/wiki/Thegn?useskin=vector
+https://en.wikipedia.org/wiki/Housecarl?useskin=vector
+
+- Some Medieval for Temple Faction?
+https://en.wikipedia.org/wiki/Justiciar
+https://en.wikipedia.org/wiki/Knight_Marshal
+
+Major Factions:
+- Greeks:
+	- Notes:
+		- Another Tech heavy and some mystic aspect civilization?
+	- Hero
+		- Strategos
+	- Units:
+		- Hoplite / Phalanx / Pikeman
+			- Use Konos Helm?
+		- Varangian Guard / Huskarl
+		- Catahracts
+			- Hetairoi / Companion cavalry / Tech / Unit?
+		- Flamethrower Unit (Greek Fire) ?
+			- Ranged Unit?
+		- Automaton
+			- Talos
+			- Galatea / Tech
+		- Dromon
+			- Medium Ship
+			- Warship
+		- Caster 1:
+			- Oracle / Sibyl
+		- Engineer "Caster?"
+			- maybe something similar, could be to powerful
+	- Buildings:
+		- Academy
+		- Palace
+		- Workshop
+		- Lyceum
+		- Apollonion / Shrine of The Oracle / Temple of the Oracle?
+		- Shipyard
+
+- Zealots / Inquisitors
+	- Temple, Inquisitor, Templar / Crusader, Archon
+	- Castellania
+		- Iron Knight,
+			- Soul Knight
+				- Moving Suit of Armor?
+		- Inquisitor
+			- Thaumatologist
+	- Buildings:
+		- Monastery
+	- Hero
+		- Archon
+		- Castellan
+	- Units:
+		- Inquisitor
+		- Iron Knight
+			- Soul Knight
+				- Upgrade?
+	- Belief
+		- Confused mess of anti-gnostism and pro-gnostism
+		- Woreships the Rex Mundi ("King of the World") / God / Monad
+		- Immaculate?
+		- All God Entities are Equal?
+		
+- Warlocks, Formerly the Inquisitors
+	- Share traits and units with the Orcs / Late Berserker Faction
+		- Share more human units
+	- Castellania
+		- Soul Warrior
+			- Moving Suit of Armor
+		- Warlock
+			- Brander
+	- Hero
+		- Archon
+	- Belief
+		- Demenology / Demonolatry 
+		- Confused mess of anti-gnostism and pro-gnostism, but more pro gnostic
+		- Woreships the Rex Mundi ("King of the World") / God / Monad
+		- Maleficium
+
+- Disir
+	- Monastery
+		- Novice
+			- Swan Warriors / Disir
+				- White Wings.
+				- Called a Disir.
+				- Use Disir as a Grouping? The Name for their type of being? Becoming a Disir and Joining the Swan Knight Order?
+	- Einherjar
+		- Aquired from ressurecting fallen units.
+	- Warding Spirits / Watchers as helpers?
+	- Hero:
+		- Guardian
+		- Swan Warrior
+		- Disir
+		- Jarl
+	- Notes:
+		- Take Inspiration from Hephaestus and Apollo also? As Saint entitiies?
+		- Groves and Trees
+		- Disir, Monastery, Swan Maidens
+		- Names: Reginleif, Brunhild, Ragnhild, Svanhildr
+		- Thing and Lawspeaker
+		- Skald
+		- Replace a Monastery with School?
+	- Units:
+		- Standard basic Melee, cavalry and ranged?
+			- Huskarl as basic unit?
+			- Jarl as a cavalry unit?
+				- means chieftan, but sounds interesting
+		- Caster with upgrade to disir,
+			- Called Swan Maiden
+			- Disir
+				- Flying or hovering, / Amphibious
+		- Skald caster?
+		- Knarr, Cog,
+			- Transport ship
+			- Trade Ships
+			- Has many transport slots
+		- Longship
+			- Light Ranged Ship
+			- Has a few transport slots
+	- Building?
+		- Longhouse / Standard combat unit production:
+		- Generic Buildings,
+		- Caster Production as the Monastery?
+		- Shipyard:
+	- Upgrades:
+		- Leidang
+			- Upgrades Ships
+		- Seafairers:
+			- Gain Transport slots in trade ships. (Not many).
+			- A good way to increase their seafairing and limit them somewhat early on.
+			
+- Sirens, Melusines
+	- Real name should be something based on Melusine
+	- Have Mermaid friends, just not unit as they are water only,
+		- Melusine can snake on legs, have a long sea snake / mermaid / fish lower body.
+	- Knight and "mermaids" themed
+		- Knights, paladins and so forth.
+	- Norman Sicily based.
+	- Accusations of Siren spells and magic, they dont have this ability and should not have it.
+	- Has a home on a set of islands,
+	- Melusines can swim in water and slither on land, making them amphibious units
+	- Maybe have a few mermaids on horses for campaign unit, that appears on land.
+	- Hero:
+		- Melusines unit,
+		- Human Knight themed hero,
+		- Human Ranged?
+	- Units:
+		- Human Melee unit,
+		- Melusine melee unit,
+			- Should be a lesser unit somehow, less upgrades or something, maybe use ranged or caster armor upgrade
+			- Can go on land and water, allowing for raiding, hit and run near water and so forth
+			- Maybe call it Nereid Striker? with lore description revealing it being a Melusine.
+			- 
+		- Human Knight unit,
+		- Human Ranged Unit
+		- Human Caster
+			- Call it scholar or something?
+			- culumination of 4 Traditions + Melusine Inspiration
+		- Melusines Caster
+		- Siege / Generic human siege?
+	- Buildings:
+		- Donjon, (Can build tower, which can recruits units.)
+		
+- "Celts", Fossegrim / Vates,,
+	- Music / Skalds, Bards
+	- Warrior
+		- Knight
+	- Bard
+		- Fossegrim
+		- Seanchaí
+	- Lake Fey or Raven Fey
+	- Use some Roman influence?
+- Czech / Chalice People
+	- Hero
+		- Alchemist
+		- Grenadier
+		- Mystic
+	- Workshop
+		- Wagenburg / Gunpowder Unit
+		- Hand Gunner as a Archer replacement?
+	- University
+		- Golem
+		- Hand Gunner as a Archer replacement?
+	- Beliefs
+		- Anti-Monasticism
+		- Anti Veneration of saints and images
+		- Chose their own priests
+		- Anti Indulgence
+		- Radicals
+			- Split Between the State and Church
+			- Pro Ancestral Sin
+			- Abolish Priesthood
+	- Units:
+		- Have starting unit be a ranged gunner?
+		- siege is a portable anti personel wagon and a bombard version,
+		- Has a golem
+		- Engineer "Caster"
+			- Can fix the mechanical units
+		- Mystic or Scribe Caster?
+			- Depending on the hero
+	- Building
+		- Caster Production Center should be the University?
+		- Workshop for siege and maybe gunpowder units?
+
+- Orcs / Late Berserker Faction
+	- Berserks, Berserker, Orc, Wraith Lord
+	- Woreship the Master / Lord of Frenzy and Possessed (Possessed as Possessed by Frenzy)
+	- Burial Mound
+		- Draug
+			- Draud Barrow-Wight
+			- Curse
+			- Disease
+		- Wight
+			- Frenzy (Spell)
+	- Hall
+		- Orc (Melee and Archer Versions?)
+		- Berserker
+			- Cheap Human Unit
+	- Hero
+		- Master / Lord of Frenzy and Possessed (Possessed as Possessed by Frenzy)
+		- Lord of Frenzy
+		- Lord of the Possessed?
+		- Wraith Lord
+		- Cultus
+		- Death Knight (Hero)
+	- Units:
+		- Draug
+			- Draud Barrow-Wight
+			- Curse
+			- Disease
+		- Wight
+			- Frenzy (Spell)
+		- Orc (Melee and Archer Versions?)
+		- Berserker
+			- Cheap Human Unit
+		- Warlock
+			- Human unit?
+	- Buildings
+		- Hall
+			- Makes the Orcs and Berserker units.
+		- Burial Mound
+			- Makes the Draug and Wight units
+
+General:
+- Barracks
+	- Archer
+	- Pikeman
+- Mariners, (Basic Sea Units) / Shipyard
+	- Galley
+		- Heavy Ship
+		- Warship
+- Village, (Basic Land Units)
+
+
+WORLD MAP:
+	- Norse Kingdoms and Republics,
+		- Berserkers - Evil
+		- Disir - Good
+	- Greek City States,
+	- Byzantine Empire?
+	- Main Medieval Temple group,
+		- Evil
+	- Czech / Chalice People
+	- Green Nomad Coastal Hill/Mountain and Forest Region.
+	- The Sirenic Lands
+		- Main Island, plus other influencial regions

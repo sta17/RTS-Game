@@ -1,0 +1,54 @@
+Siren Hero:
+- Name:
+- Species: Melusine
+- Themes: Water, Light, Melee, Sirenic Abilities.
+- Primary Stat: Intelligence, Lesser: Dexterity
+- Class 1: Enchantress
+	- Crushing Force
+	- Enchant Weapon
+- Class 2: Sirena / Sybil?
+	- Purify Water?
+	- Mass Musical Distrupt
+	- Devour Magic
+	
+Warrior Companion?
+- Name: 
+- Species: Human
+- Themes: Melee, Light
+- Primary Stat: Dexterity, Lesser: Strength
+- Class 1: Knight
+- Class 2: Holy Marshall
+	- Model gain a Thurible
+	- Purification of the Mind
+		- Grant Strength or disipline. Some sort of Buff.
+	- Purification of the Body
+		- Dispel magical effects.
+
+Hegde Wizard?
+- Name: Faros Arcader?
+- Species: Human
+- Themes: Nature and more commonfolk magic.
+- Primary Stat: Intelligence, Lesser: Strength?
+- Class 1: Hedge Wizard
+- Class 2: High Arcanister
+- Spells and Abilities:
+	- Lightning Shield
+	- Ancient Arts
+		- Symbol: Rainy Sky (/Tranquility)
+		- Healing
+	- Entanging Roots
+		- Disabling
+	- Shroud of the Deep Grove
+		- Symbol: Owl (/Sentinel)
+		- Fog/Invisibility
+		
+Characters:
+Butch Haired Melusine
+- Appears as a defender in a mission, in a none melusine campaign.
+Long Haired Melusine
+- The Hero that would go thought the campaign,
+- Battle the zealots, expose the dark plot, and liberate the holy city.
+Mermaid
+- Friend of Long Haired Melusine
+- Travels Around on a horse.
+- Is Technically a swimming unit, is a mermaid, but game wise its land only.

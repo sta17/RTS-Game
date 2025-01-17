@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=9 format=3 uid="uid://cypmx43ckbv7x"]
+
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_sp5be"]
+[ext_resource type="Resource" uid="uid://dx53egd7sydle" path="res://Scenes/ItemCategories/Common.tres" id="1_v5ert"]
+[ext_resource type="Resource" uid="uid://dqn2wdgj4uf31" path="res://Scenes/ItemCategories/Slot Types/Weapons.tres" id="2_aoqe5"]
+[ext_resource type="Resource" uid="uid://b8mpjs04pnha7" path="res://Scenes/ItemCategories/Slot Types/MainHand.tres" id="3_cfgn4"]
+[ext_resource type="Resource" uid="uid://bwlnp3ivr86xm" path="res://Scenes/ItemCategories/Slot Types/OffHand.tres" id="4_qakv1"]
+[ext_resource type="Texture2D" uid="uid://bx7nag64mp1bj" path="res://Assets/Public Domain/Icons34x34byAilsEnglish2013/W_Dagger005.png" id="5_c0rev"]
+[ext_resource type="Resource" uid="uid://jn10rfaqwwlu" path="res://Scenes/ItemCategories/Slot Types/OneHand.tres" id="5_mgqrh"]
+[ext_resource type="Script" path="res://Scripts/Item/Inventory_item.gd" id="6_davpu"]
+
+[resource]
+script = ExtResource("6_davpu")
+id = 4
+max_stack = 1
+name = "Knife"
+icon = ExtResource("5_c0rev")
+properties = {
+"Lore": &"A Common Knife",
+"Rank": ExtResource("1_v5ert")
+}
+tooltip = ""
+lore = "A Common Knife"
+rank = ExtResource("1_v5ert")
+categories = Array[ExtResource("1_sp5be")]([ExtResource("1_v5ert"), ExtResource("2_aoqe5"), ExtResource("3_cfgn4"), ExtResource("4_qakv1"), ExtResource("5_mgqrh")])

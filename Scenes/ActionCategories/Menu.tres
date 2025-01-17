@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://dcvo67ckek707"]
+
+[ext_resource type="Texture2D" uid="uid://dfy71w7nahaq2" path="res://Assets/Public Domain/Kenney/64x64/menuList.png" id="1_nu0a5"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_tij8y"]
+
+[resource]
+script = ExtResource("2_tij8y")
+name = "Menu"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_nu0a5")

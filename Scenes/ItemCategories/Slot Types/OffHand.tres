@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://bwlnp3ivr86xm"]
+
+[ext_resource type="Texture2D" uid="uid://ty54hlqlqu3d" path="res://Assets/Unity Assets/Clean Vector Icons/T_1_shield_.png" id="1_xsxve"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_dt2f3"]
+
+[resource]
+script = ExtResource("2_dt2f3")
+name = "Off Hand"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_xsxve")

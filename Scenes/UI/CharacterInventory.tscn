@@ -1,0 +1,556 @@
+[gd_scene load_steps=42 format=3 uid="uid://df1xejmi74m51"]
+
+[ext_resource type="Script" path="res://Scripts/UI/CharacterInventory.gd" id="1_fi4fk"]
+[ext_resource type="Theme" uid="uid://drqxr24ly24mt" path="res://Godot Setting Files/General Theme.tres" id="1_mthop"]
+[ext_resource type="PackedScene" uid="uid://cnp2ce2opdday" path="res://Scenes/UI/inv_ui_slot 64.tscn" id="1_xsojh"]
+[ext_resource type="Texture2D" uid="uid://dtdo1jqig8bbg" path="res://Assets/Copy Right - Must Replace/AoE2DE_emblem_Armenians_webp.png" id="2_j8aov"]
+[ext_resource type="Script" path="res://Scripts/UI/StatDisplay.gd" id="4_h6ebn"]
+[ext_resource type="Texture2D" uid="uid://cy0xvcgvuxogo" path="res://Assets/Mine/UI/Frame 64.png" id="5_1j5v5"]
+[ext_resource type="Texture2D" uid="uid://gbskcxc7erhg" path="res://Assets/Mine/Godot Helpers/HumanoidIcon 64.png" id="6_3l3bw"]
+[ext_resource type="PackedScene" uid="uid://dxobyo6k4fkc6" path="res://Scenes/UI/categorized_inv_ui_slot.tscn" id="6_56yr2"]
+[ext_resource type="Resource" uid="uid://dqn2wdgj4uf31" path="res://Scenes/ItemCategories/Slot Types/Weapons.tres" id="7_3tku4"]
+[ext_resource type="Texture2D" uid="uid://bmx7xu06pmbt" path="res://Assets/Mine/UI/Frame 64 Frame Only.png" id="7_ji07p"]
+[ext_resource type="LabelSettings" uid="uid://dfaa14rb685rc" path="res://Godot Setting Files/WhiteLabelText.tres" id="8_vnxd1"]
+[ext_resource type="Resource" uid="uid://b8mpjs04pnha7" path="res://Scenes/ItemCategories/Slot Types/MainHand.tres" id="8_wu43g"]
+[ext_resource type="Texture2D" uid="uid://0d3i5hmx7ggn" path="res://Assets/Mine/UI/Frame 32 Sword.png" id="9_ox7ls"]
+[ext_resource type="Resource" uid="uid://bwlnp3ivr86xm" path="res://Scenes/ItemCategories/Slot Types/OffHand.tres" id="9_t1njx"]
+[ext_resource type="LabelSettings" uid="uid://jod5507bx8i6" path="res://Godot Setting Files/YellowLabelText.tres" id="10_6xcp6"]
+[ext_resource type="Texture2D" uid="uid://bj78dcpinomcy" path="res://Assets/Mine/UI/Frame Red.png" id="11_2crxj"]
+[ext_resource type="Texture2D" uid="uid://cug1ns3lxnk6j" path="res://Assets/Mine/UI/Frame 32 Armor.png" id="11_lr2kh"]
+[ext_resource type="Texture2D" uid="uid://buse3750rjhur" path="res://Assets/Mine/UI/Ring.png" id="12_5a13r"]
+[ext_resource type="Texture2D" uid="uid://bhh7e0kyh52rg" path="res://Assets/Mine/UI/Frame Blue.png" id="12_mwc4i"]
+[ext_resource type="Texture2D" uid="uid://cc7hfnrj136o8" path="res://Assets/Mine/UI/Shield_64.png" id="12_r5y32"]
+[ext_resource type="Resource" uid="uid://tuoeadi8vwtf" path="res://Scenes/ItemCategories/Slot Types/Trinket.tres" id="13_nieq5"]
+[ext_resource type="Texture2D" uid="uid://dsfcakkaldmx7" path="res://Assets/Mine/UI/Frame Green.png" id="13_nqw2p"]
+[ext_resource type="Resource" uid="uid://cin2lt42whreb" path="res://Scenes/ItemCategories/Slot Types/Neckless.tres" id="14_hdp8w"]
+[ext_resource type="Resource" uid="uid://d0b04uumbesco" path="res://Scenes/ItemCategories/Slot Types/Ring.tres" id="15_l1r5b"]
+[ext_resource type="Texture2D" uid="uid://cr431r8jjhnje" path="res://Assets/Mine/UI/Sword_64.png" id="15_n0xnh"]
+[ext_resource type="Resource" uid="uid://jn10rfaqwwlu" path="res://Scenes/ItemCategories/Slot Types/OneHand.tres" id="16_j8bcs"]
+[ext_resource type="Resource" uid="uid://6p6atgbpawf1" path="res://Scenes/ItemCategories/Slot Types/TwoHanded.tres" id="17_2meqd"]
+[ext_resource type="Texture2D" uid="uid://cmrvdc6iwittf" path="res://Assets/Mine/UI/helmet.png" id="17_eyyn1"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="17_vm1o6"]
+[ext_resource type="Texture2D" uid="uid://opoi4uif5sqi" path="res://Assets/Mine/UI/ChestArmor.png" id="18_mom18"]
+[ext_resource type="Texture2D" uid="uid://chen7r4mm43nk" path="res://Assets/Mine/UI/Boots.png" id="19_yv86u"]
+[ext_resource type="Texture2D" uid="uid://c3ocnddox6ed4" path="res://Assets/Mine/UI/Gloves.png" id="20_2h7wb"]
+[ext_resource type="Resource" uid="uid://btq0i28gd4oc0" path="res://Scenes/ItemCategories/Slot Types/Head.tres" id="24_hyho1"]
+[ext_resource type="Resource" uid="uid://hy1srwy7k3r0" path="res://Scenes/ItemCategories/Slot Types/Helmet.tres" id="25_l3byh"]
+[ext_resource type="Resource" uid="uid://cgq6e8q2ot5ec" path="res://Scenes/ItemCategories/Slot Types/Chest.tres" id="27_3gn0v"]
+[ext_resource type="Resource" uid="uid://duc53yimt3wum" path="res://Scenes/ItemCategories/Slot Types/ChestArmor.tres" id="28_a4dfj"]
+[ext_resource type="Resource" uid="uid://ct7sas37aygfs" path="res://Scenes/ItemCategories/Slot Types/Pants.tres" id="29_p7qmv"]
+[ext_resource type="Resource" uid="uid://bjr8g8ichq00h" path="res://Scenes/ItemCategories/Slot Types/Gloves.tres" id="30_d0tmj"]
+[ext_resource type="Resource" uid="uid://cafueslplwd62" path="res://Scenes/ItemCategories/Slot Types/Hands.tres" id="32_cmtj0"]
+[ext_resource type="Resource" uid="uid://cgdopxvol3oia" path="res://Scenes/ItemCategories/Slot Types/Boots.tres" id="34_ij8s2"]
+[ext_resource type="Resource" uid="uid://6tiqj4iuhjkp" path="res://Scenes/ItemCategories/Slot Types/Feets.tres" id="35_atxu2"]
+
+[node name="Character_Inventory" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fi4fk")
+statDisplayPath = NodePath("Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay")
+itemSlotsContainerPath = NodePath("Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer")
+categorizedItemSlotsContainerPath = NodePath("Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -366.0
+offset_top = -242.5
+offset_right = 366.0
+offset_bottom = 242.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_mthop")
+
+[node name="MarginContainer" type="MarginContainer" parent="Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 10
+theme_override_constants/margin_bottom = 10
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel/MarginContainer"]
+layout_mode = 2
+
+[node name="Upper Section - Control" type="Control" parent="Panel/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="Sprite - TextureRect" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_j8aov")
+
+[node name="StatDisplay" type="Control" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control"]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 460.0
+offset_top = 5.0
+offset_right = 695.0
+offset_bottom = 336.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("4_h6ebn")
+
+[node name="MainColumn" type="GridContainer" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.401
+anchor_bottom = 1.0
+offset_right = 171.63
+offset_bottom = -277.0
+
+[node name="Frame" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/MainColumn"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("5_1j5v5")
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/MainColumn/Frame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("6_3l3bw")
+stretch_mode = 3
+
+[node name="Frame" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/MainColumn/Frame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_ji07p")
+stretch_mode = 3
+
+[node name="Name Field" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/MainColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "12345678912345678"
+label_settings = ExtResource("8_vnxd1")
+horizontal_alignment = 1
+
+[node name="HP Field" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/MainColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "HPHPHP / HPHPHP"
+label_settings = ExtResource("8_vnxd1")
+horizontal_alignment = 1
+
+[node name="AETHER Field" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/MainColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "AETHER / AETHER"
+label_settings = ExtResource("8_vnxd1")
+horizontal_alignment = 1
+
+[node name="Item Description Field" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay"]
+layout_mode = 0
+offset_left = -420.5
+offset_top = 41.0
+offset_right = -296.5
+offset_bottom = 85.0
+theme_override_font_sizes/font_size = 13
+text = "Description:"
+label_settings = ExtResource("8_vnxd1")
+
+[node name="VisibleStats" type="Control" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay"]
+layout_mode = 1
+anchor_left = 0.401
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -90.3703
+offset_top = 184.0
+offset_right = 12.725
+offset_bottom = -132.0
+
+[node name="DamageAndArmor" type="Control" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats"]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 28.0
+offset_right = 123.0
+offset_bottom = 143.0
+
+[node name="DamageIcon" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_ox7ls")
+
+[node name="DamageField" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = 14.0
+offset_right = 112.0
+offset_bottom = 37.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT-TTTT"
+label_settings = ExtResource("10_6xcp6")
+horizontal_alignment = 1
+
+[node name="DamageLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = -4.0
+offset_right = 103.0
+offset_bottom = 19.0
+theme_override_font_sizes/font_size = 13
+text = "Damage:"
+label_settings = ExtResource("8_vnxd1")
+
+[node name="ArmorIcon" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_top = 36.0
+offset_right = 32.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_lr2kh")
+
+[node name="ArmorField" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = 50.0
+offset_right = 112.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT-TTTT"
+label_settings = ExtResource("10_6xcp6")
+horizontal_alignment = 1
+
+[node name="ArmorLabel" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = 32.0
+offset_right = 90.0
+offset_bottom = 55.0
+theme_override_font_sizes/font_size = 13
+text = "Armor:"
+label_settings = ExtResource("8_vnxd1")
+
+[node name="HeroStats" type="Control" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats"]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 129.0
+offset_top = 17.0
+offset_right = 239.0
+offset_bottom = 146.0
+
+[node name="StrengthIcon" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("11_2crxj")
+
+[node name="Strength Field" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 13.0
+offset_right = 70.0
+offset_bottom = 36.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT"
+label_settings = ExtResource("10_6xcp6")
+horizontal_alignment = 1
+
+[node name="Strength Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = -5.0
+offset_right = 83.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 13
+text = "Body;"
+label_settings = ExtResource("8_vnxd1")
+
+[node name="IntIcon" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_top = 36.0
+offset_right = 32.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("12_mwc4i")
+
+[node name="Int Field" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 49.0
+offset_right = 70.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT"
+label_settings = ExtResource("10_6xcp6")
+horizontal_alignment = 1
+
+[node name="Int Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 31.0
+offset_right = 83.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 13
+text = "Mind:"
+label_settings = ExtResource("8_vnxd1")
+
+[node name="AgilityIcon" type="TextureRect" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_top = 72.0
+offset_right = 32.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_nqw2p")
+
+[node name="Agility Field" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 84.0
+offset_right = 70.0
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT"
+label_settings = ExtResource("10_6xcp6")
+horizontal_alignment = 1
+
+[node name="Agility Label" type="Label" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 67.0
+offset_right = 95.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 13
+text = "Finesse:"
+label_settings = ExtResource("8_vnxd1")
+
+[node name="Control" type="Control" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -269.0
+offset_bottom = -123.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Trinket 2 - Categorized Inv UI Slot8" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.5
+offset_top = 80.5
+offset_right = -69.5
+offset_bottom = 144.5
+ItemSilhouette = ExtResource("12_5a13r")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("13_nieq5"), ExtResource("14_hdp8w"), ExtResource("15_l1r5b")])
+
+[node name="Shield - Categorized Inv UI Slot6" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 94.5
+offset_top = 83.5
+offset_right = 158.5
+offset_bottom = 147.5
+ItemSilhouette = ExtResource("12_r5y32")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("9_t1njx"), ExtResource("7_3tku4"), ExtResource("16_j8bcs"), ExtResource("17_2meqd")])
+
+[node name="Trinket 1 - Categorized Inv UI Slot7" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -133.5
+offset_top = 11.5
+offset_right = -69.5
+offset_bottom = 75.5
+ItemSilhouette = ExtResource("12_5a13r")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("13_nieq5"), ExtResource("14_hdp8w"), ExtResource("15_l1r5b")])
+
+[node name="Weapon - Categorized Inv UI Slot5" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.5
+offset_top = 81.5
+offset_right = 3.5
+offset_bottom = 145.5
+ItemSilhouette = ExtResource("15_n0xnh")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("7_3tku4"), ExtResource("8_wu43g"), ExtResource("16_j8bcs"), ExtResource("17_2meqd")])
+
+[node name="Head - Categorized Inv UI Slot" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 18.5
+offset_top = -57.5
+offset_right = 82.5
+offset_bottom = 6.5
+ItemSilhouette = ExtResource("17_eyyn1")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("24_hyho1"), ExtResource("25_l3byh")])
+
+[node name="Chest - Categorized Inv UI Slot2" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 18.5
+offset_top = 12.0
+offset_right = 82.5
+offset_bottom = 76.0
+ItemSilhouette = ExtResource("18_mom18")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("27_3gn0v"), ExtResource("28_a4dfj"), ExtResource("29_p7qmv")])
+
+[node name="Gloves - Categorized Inv UI Slot4" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -60.5
+offset_top = 12.5
+offset_right = 3.5
+offset_bottom = 76.5
+ItemSilhouette = ExtResource("20_2h7wb")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("30_d0tmj"), ExtResource("32_cmtj0")])
+
+[node name="Boots - Categorized Inv UI Slot3" parent="Panel/MarginContainer/VBoxContainer/Upper Section - Control/Control" instance=ExtResource("6_56yr2")]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+offset_left = 243.5
+offset_top = 295.0
+offset_right = -142.5
+offset_bottom = -69.0
+ItemSilhouette = ExtResource("19_yv86u")
+categories = Array[ExtResource("17_vm1o6")]([ExtResource("34_ij8s2"), ExtResource("35_atxu2")])
+
+[node name="CenterContainer" type="CenterContainer" parent="Panel/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="GridContainer" type="GridContainer" parent="Panel/MarginContainer/VBoxContainer/CenterContainer"]
+layout_mode = 2
+columns = 10
+
+[node name="inv_ui_slot 01" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 02" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 03" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 04" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 05" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 06" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 07" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 08" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 09" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 10" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 11" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 12" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 13" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 14" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 15" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 16" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 17" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 18" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 19" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2
+
+[node name="inv_ui_slot 20" parent="Panel/MarginContainer/VBoxContainer/CenterContainer/GridContainer" instance=ExtResource("1_xsojh")]
+layout_mode = 2

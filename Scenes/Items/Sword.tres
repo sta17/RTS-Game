@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=9 format=3 uid="uid://rxl2u6vrqgje"]
+
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_0jixb"]
+[ext_resource type="Resource" uid="uid://dx53egd7sydle" path="res://Scenes/ItemCategories/Common.tres" id="1_lt44h"]
+[ext_resource type="Resource" uid="uid://b8mpjs04pnha7" path="res://Scenes/ItemCategories/Slot Types/MainHand.tres" id="2_bmq8s"]
+[ext_resource type="Resource" uid="uid://dqn2wdgj4uf31" path="res://Scenes/ItemCategories/Slot Types/Weapons.tres" id="3_xo0gk"]
+[ext_resource type="Resource" uid="uid://jn10rfaqwwlu" path="res://Scenes/ItemCategories/Slot Types/OneHand.tres" id="4_crmsa"]
+[ext_resource type="Texture2D" uid="uid://dofd8d8p0gmki" path="res://Assets/Public Domain/Items/sword 2.png" id="4_d4soo"]
+[ext_resource type="Script" path="res://Scripts/Item/Inventory_item.gd" id="5_kmep5"]
+[ext_resource type="Resource" uid="uid://bwlnp3ivr86xm" path="res://Scenes/ItemCategories/Slot Types/OffHand.tres" id="5_sikg6"]
+
+[resource]
+script = ExtResource("5_kmep5")
+id = 3
+max_stack = 1
+name = "Sword"
+icon = ExtResource("4_d4soo")
+properties = {
+"Lore": &"A Common Sword, some copper has been used to add decoration to the Hilt.",
+"Rank": ExtResource("1_lt44h")
+}
+tooltip = ""
+lore = "A Common Sword, some copper has been used to add decoration to the Hilt."
+rank = ExtResource("1_lt44h")
+categories = Array[ExtResource("1_0jixb")]([ExtResource("1_lt44h"), ExtResource("2_bmq8s"), ExtResource("3_xo0gk"), ExtResource("4_crmsa"), ExtResource("5_sikg6")])

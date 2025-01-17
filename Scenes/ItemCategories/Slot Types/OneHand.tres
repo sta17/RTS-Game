@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://jn10rfaqwwlu"]
+
+[ext_resource type="Texture2D" uid="uid://cr431r8jjhnje" path="res://Assets/Mine/UI/Sword_64.png" id="1_i1gu1"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_msf7o"]
+
+[resource]
+script = ExtResource("2_msf7o")
+name = "One Hand"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_i1gu1")

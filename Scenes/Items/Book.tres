@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=7 format=3 uid="uid://srjiv1uy2k12"]
+
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_5ddst"]
+[ext_resource type="Texture2D" uid="uid://cjcgddhv88inh" path="res://Assets/Public Domain/Icons34x34byAilsEnglish2013/I_Book.png" id="1_bp3nv"]
+[ext_resource type="Resource" uid="uid://dx53egd7sydle" path="res://Scenes/ItemCategories/Common.tres" id="1_eaq5e"]
+[ext_resource type="Resource" uid="uid://5q8nvd2q3lc6" path="res://Scenes/ItemCategories/General.tres" id="2_0oivi"]
+[ext_resource type="Script" path="res://Scripts/Item/Inventory_item.gd" id="2_ybxqn"]
+[ext_resource type="Resource" uid="uid://cwffkn2xowc6a" path="res://Scenes/ItemCategories/Misc.tres" id="3_wr2ey"]
+
+[resource]
+script = ExtResource("2_ybxqn")
+id = 1
+max_stack = 64
+name = "Book"
+icon = ExtResource("1_bp3nv")
+properties = {
+"Lore": &"A Common Book, its about some mundane matters.",
+"Rank": ExtResource("1_eaq5e")
+}
+tooltip = ""
+lore = "A Common Book, its about some mundane matters."
+rank = ExtResource("1_eaq5e")
+categories = Array[ExtResource("1_5ddst")]([ExtResource("1_eaq5e"), ExtResource("2_0oivi"), ExtResource("3_wr2ey")])

@@ -1,0 +1,137 @@
+- UI
+	- Load  and display Stats of selected entity
+		- Item
+		- Unit
+		- Destructable
+	- Unit Inventory
+	- Hero Inventory
+
+	- Pause
+	- Exit
+		- call quit on exit key if debug or exit button
+	- Resource Counter
+		- get player's resource count and update.
+
+- ITEM
+	- Name
+	- Description
+	- Lore
+	- Tooltip
+	- Slot
+		- General / Default
+		- Head / Trinket / Chest / Legs / Main hand / Off hand
+	- Category
+		- Charge
+			- Charges Amount
+			- Max Charge Amount
+			- Start Charges Amount
+		- Pickup
+			- Use Spell on pickup and destroy.
+		- General
+	- Spells and Abilities
+	- Icon
+	- Model
+
+- Combat
+	- Selection - DONE
+	- Movement - DONE
+
+	- Attack / Auto Attack
+	- Stats
+		- Health
+			- Max
+			- Current
+		- Mana / Aether
+			- Max
+			- Current
+		- Attack
+			- Attack Types
+			- Start Attack
+			- Current Attack
+		- Defense
+			- Defense types
+			- Start Defense
+			- Current Defense
+		- Hero Stats
+			- Start amounnt,
+			- Current amount,
+			- gain per level,
+		- Speed
+	
+	- Formation
+		- Buff while in Formation
+
+	- Friend, Foe, Allied, Neutral.
+	- Attack Order
+		- Path to target and scan for enemies
+	- Stop
+		- cancel current action / cancel any movement / set to idle state.
+	- Defend
+		- scan and attack any enemies in range. Retreat back to start if out of range.
+	- Stand Ground
+		- scan and attack any enemies in range. Do not pursue
+	- Display Movement / Attack Targets while Paused. / Tactical Display.
+		- Get destination, draw arrow.
+
+	- Abilities
+		- Use thought unit ability
+			- use spell ability, call on use ability action.
+		- Use thought item ability
+			- use item ability, call on use ability action.
+		- Add passive Abilities to units.
+		- Add passive Abilities to items.
+
+	- Items Give Functional Stats.
+		- Functional Stats / make it affect things more / hero stats
+		- https://wowpedia.fandom.com/wiki/Hero_(Warcraft_III)#General
+			- https://wowpedia.fandom.com/wiki/Paladin_(Warcraft_III)
+		- https://wowpedia.fandom.com/wiki/Warcraft_III_armor_and_attack_types#Normal
+			- https://wowpedia.fandom.com/wiki/Footman_(Warcraft_III)#Classic
+		- Items give resources
+		- Items give mana and health
+
+	- Hero Ressurection Mechanics.
+		- Detect death, check flags, Enable Actions
+		- Res from Building.
+			- Add ressurect button to res site.
+		- Res on the spot.
+			- scan for allies, if found in range, ressurect at 1 health, play animation.
+		- Turn Res On and Off.
+			- Turn flags on and off.
+
+Misc:
+	- Buildings,
+		- Build Buildings
+		- Production and Reaserch
+			- button detect action, read action, do production or reaserch,
+				- reserve resources,
+				- reserve reaserch if reaserch
+					- disable button
+					- unique action flag
+				- do timer, with animated bar
+				- notify action done and do action for type
+					- spawn unit
+					- grant reaserch
+			- cancel
+				- refund resources
+				- enable button if unique action
+		- Build Building
+			- place site at legal area.
+			- reserve resource
+			- enable interactions by workers.
+			- Build Certain Buildings only on Circles.
+				- if build action in circle, move to center
+
+	- Resource Mechanics.
+		- Gather from item.
+			- Grant resource per action
+				- per returned worker
+				- every x sec/min
+		- Destroy resource on Empty resource.
+			- if empty, destroy, cancel worker action.
+
+Extra:
+
+- Walls.
+	- Start point, end point, fill in between
+	

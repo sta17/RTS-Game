@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=2 format=3 uid="uid://cg8p0j5031gpr"]
+
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_shrlk"]
+
+[resource]
+script = ExtResource("1_shrlk")
+name = "Artifact"
+color = Color(1, 0.54902, 0, 1)

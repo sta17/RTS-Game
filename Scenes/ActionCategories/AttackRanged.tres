@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://c02uk1d4ihhqq"]
+
+[ext_resource type="Texture2D" uid="uid://cxvadk7ycku46" path="res://Assets/Public Domain/Kenney/64x64/bow.png" id="1_0j01w"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_6320m"]
+
+[resource]
+script = ExtResource("2_6320m")
+name = "AttackRanged"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_0j01w")

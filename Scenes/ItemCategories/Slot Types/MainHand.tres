@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://b8mpjs04pnha7"]
+
+[ext_resource type="Texture2D" uid="uid://dvt071pdjym5n" path="res://Assets/Unity Assets/Clean Vector Icons/T_1_sword90_.png" id="1_vjiaw"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_i752l"]
+
+[resource]
+script = ExtResource("2_i752l")
+name = "Main Hand"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_vjiaw")

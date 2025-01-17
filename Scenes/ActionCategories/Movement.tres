@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://5ow6yv46g4fs"]
+
+[ext_resource type="Texture2D" uid="uid://bdt22kq58ybbk" path="res://Assets/Public Domain/Kenney/64x64/steps.png" id="1_3n3q8"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_oe807"]
+
+[resource]
+script = ExtResource("2_oe807")
+name = "Movement"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_3n3q8")

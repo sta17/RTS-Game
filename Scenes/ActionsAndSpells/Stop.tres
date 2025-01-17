@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActionData" load_steps=5 format=3 uid="uid://bp4vcye3qv6ji"]
+
+[ext_resource type="Texture2D" uid="uid://bnwl3wjvlodia" path="res://Assets/Public Domain/Kenney/64x64/cross.png" id="1_iea33"]
+[ext_resource type="Resource" uid="uid://cig5m2ajgwdxf" path="res://Scenes/ActionCategories/Cancel.tres" id="1_js210"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_n4jm2"]
+[ext_resource type="Script" path="res://Scripts/UI/action_data.gd" id="2_obsuh"]
+
+[resource]
+script = ExtResource("2_obsuh")
+id = 3
+name = "Stop"
+icon = ExtResource("1_iea33")
+tooltip = ""
+properties = {}
+categories = Array[ExtResource("1_n4jm2")]([ExtResource("1_js210")])

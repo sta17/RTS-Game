@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://d2qma41umysvw"]
+
+[ext_resource type="Texture2D" uid="uid://cfvssmk1eob05" path="res://Assets/Public Domain/Kenney/64x64/shield.png" id="1_wb58q"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_iun2y"]
+
+[resource]
+script = ExtResource("2_iun2y")
+name = "Guard"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_wb58q")

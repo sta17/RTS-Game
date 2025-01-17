@@ -1,0 +1,613 @@
+[gd_scene load_steps=31 format=3 uid="uid://qibn8gi11t74"]
+
+[ext_resource type="PackedScene" uid="uid://djqsxq0cdjjrd" path="res://Scenes/UI/player_interface.tscn" id="1_p17jh"]
+[ext_resource type="Resource" uid="uid://clhu8fhodse6" path="res://Scenes/Unit/Test Unit A.tres" id="3_f4rqo"]
+[ext_resource type="Resource" uid="uid://5lmf3fbyl5gt" path="res://Scenes/Unit/Test Hero.tres" id="4_aooaf"]
+[ext_resource type="Script" path="res://Scripts/Item/Inventory.gd" id="4_cy4ux"]
+[ext_resource type="Resource" uid="uid://d2vyevulcc1wk" path="res://Scenes/Unit/Test Unit F.tres" id="4_gyaws"]
+[ext_resource type="Resource" uid="uid://srjiv1uy2k12" path="res://Scenes/Items/Book.tres" id="5_af4i2"]
+[ext_resource type="PackedScene" uid="uid://bo2w31tvxcut0" path="res://Scenes/Map Objects/faction.tscn" id="6_b2vrj"]
+[ext_resource type="Script" path="res://Scripts/Item/Inv_Slot.gd" id="6_nmlan"]
+[ext_resource type="PackedScene" path="res://Scenes/Unit/Generic Test Unit V2.tscn" id="7_0tu32"]
+[ext_resource type="Resource" uid="uid://eu5erm2e6v0n" path="res://Scenes/Items/GrandSword.tres" id="7_y3rh5"]
+[ext_resource type="Resource" uid="uid://cypmx43ckbv7x" path="res://Scenes/Items/Knife.tres" id="8_n25eu"]
+[ext_resource type="Resource" uid="uid://rxl2u6vrqgje" path="res://Scenes/Items/Sword.tres" id="9_ouneb"]
+[ext_resource type="Resource" uid="uid://mvcerlecud1p" path="res://Scenes/Unit/Test Unit Big Health.tres" id="10_xptho"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xpbbe"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_v62fr"]
+sky_material = SubResource("ProceduralSkyMaterial_xpbbe")
+
+[sub_resource type="Environment" id="Environment_jp2hy"]
+background_mode = 2
+sky = SubResource("Sky_v62fr")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="NavigationMesh" id="NavigationMesh_y0tx7"]
+vertices = PackedVector3Array(-45.25, -0.5, -10.5, -45, -0.5, -14.5, -45.5, -0.5, -14.75, -164.5, -0.5, -10.5, -45.5, -0.5, -30.25, -43.25, -0.5, -30.5, -43.25, -0.5, -59.5, -45.5, -0.5, -30.25, -43.25, -0.5, -59.5, -45.5, -0.5, -59.75, -164.5, -0.5, -10.5, -45.5, -0.5, -59.75, -45.5, -0.5, -129.5, -164.5, -0.5, -129.5, -164.5, -0.5, -10.5, -164.5, -0.5, -10.5, -45.5, -0.5, -14.75, -45.5, -0.5, -30.25, 15, -0.5, -30.5, 15.25, -0.5, -39.5, 14.5, -0.5, -39.75, -43.25, -0.5, -30.5, 14.5, -0.5, -39.75, 14.5, -0.5, -59.5, -43.25, -0.5, -59.5, -43.25, -0.5, -30.5, 15.5, -0.5, -14.75, 15, -0.5, -14.5, 15.25, -0.5, -10.5, 44.5, -0.5, -10.5, 15.25, -0.5, -39.5, 15, -0.5, -30.5, 15.5, -0.5, -30.25, 44.5, -0.5, -39.5, 15.5, -0.5, -30.25, 15.5, -0.5, -14.75, 44.5, -0.5, -10.5, 44.5, -0.5, -39.5, -44.5, -0.5, -10.25, 14.5, -0.5, -10.25, 15.25, -0.5, -10.5, 15, -0.5, -14.5, -45, -0.5, -14.5, -45.25, -0.5, -10.5, -44.5, -0.5, -10.25, -44.5, -0.5, 14.5, 14.5, -0.5, 14.5, 14.5, -0.5, -10.25)
+polygons = [PackedInt32Array(1, 0, 2), PackedInt32Array(2, 0, 3), PackedInt32Array(6, 5, 4), PackedInt32Array(8, 7, 9), PackedInt32Array(9, 7, 10), PackedInt32Array(12, 11, 13), PackedInt32Array(13, 11, 14), PackedInt32Array(17, 16, 15), PackedInt32Array(19, 18, 20), PackedInt32Array(20, 18, 21), PackedInt32Array(23, 22, 24), PackedInt32Array(24, 22, 25), PackedInt32Array(27, 26, 28), PackedInt32Array(28, 26, 29), PackedInt32Array(31, 30, 32), PackedInt32Array(32, 30, 33), PackedInt32Array(35, 34, 36), PackedInt32Array(36, 34, 37), PackedInt32Array(43, 42, 38), PackedInt32Array(38, 42, 39), PackedInt32Array(39, 42, 40), PackedInt32Array(40, 42, 41), PackedInt32Array(47, 46, 44), PackedInt32Array(44, 46, 45)]
+agent_height = 0.0
+agent_max_climb = 0.1
+agent_max_slope = 30.0
+region_min_size = 20.0
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_v6hxg"]
+albedo_color = Color(0.556863, 0.239216, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_kw21g"]
+material = SubResource("StandardMaterial3D_v6hxg")
+size = Vector3(30, 1, 30)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_ccia1"]
+size = Vector3(30, 1, 30)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_sm4wr"]
+albedo_color = Color(0.258824, 1, 1, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r6f0a"]
+material = SubResource("StandardMaterial3D_sm4wr")
+size = Vector3(2, 2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_0ptyi"]
+size = Vector3(2, 2, 2)
+
+[sub_resource type="Resource" id="Resource_lwps1"]
+script = ExtResource("6_nmlan")
+Item = ExtResource("5_af4i2")
+amount = 2
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_hpm4q"]
+script = ExtResource("6_nmlan")
+Item = ExtResource("7_y3rh5")
+amount = 1
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_o8l6n"]
+script = ExtResource("6_nmlan")
+Item = ExtResource("8_n25eu")
+amount = 1
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_b0jxy"]
+script = ExtResource("6_nmlan")
+Item = ExtResource("9_ouneb")
+amount = 1
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_hje0o"]
+script = ExtResource("6_nmlan")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_hxq6f"]
+script = ExtResource("6_nmlan")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_wpolb"]
+script = ExtResource("4_cy4ux")
+slots = Array[ExtResource("6_nmlan")]([SubResource("Resource_lwps1"), SubResource("Resource_hpm4q"), SubResource("Resource_o8l6n"), SubResource("Resource_b0jxy"), SubResource("Resource_hje0o"), SubResource("Resource_hxq6f")])
+
+[node name="World" type="Node3D"]
+
+[node name="Player_interface" parent="." node_paths=PackedStringArray("player") instance=ExtResource("1_p17jh")]
+player = NodePath("../Factions/Human")
+
+[node name="System" type="Node" parent="."]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="System"]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 7.02485, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="System"]
+environment = SubResource("Environment_jp2hy")
+
+[node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
+navigation_mesh = SubResource("NavigationMesh_y0tx7")
+
+[node name="Floor Offset" type="Node3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, 0)
+
+[node name="FloorMesh1" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh1"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh1/Floor"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh2" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, 0)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh2"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh2/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh3" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -25)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh3"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh3/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh7" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0, -25)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh7"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh7/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh8" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -55)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh8"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh8/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh9" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0, -55)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh9"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh9/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh10" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120, 0, -25)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh10"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh10/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh11" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -25)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh11"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh11/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh12" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120, 0, -55)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh12"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh12/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh13" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -55)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh13"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh13/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh14" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -85)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh14"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh14/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh15" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0, -85)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh15"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh15/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh16" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120, 0, -85)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh16"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh16/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh17" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -85)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh17"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh17/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh18" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -60, 0, -115)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh18"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh18/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh19" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -90, 0, -115)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh19"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh19/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh20" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -120, 0, -115)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh20"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh20/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh21" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -150, 0, -115)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh21"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh21/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh4" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 0, -45)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh4"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh4/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh5" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -45)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh5"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh5/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="FloorMesh6" type="MeshInstance3D" parent="NavigationRegion3D/Floor Offset"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 0, -25)
+mesh = SubResource("BoxMesh_kw21g")
+skeleton = NodePath("../../..")
+
+[node name="Floor" type="StaticBody3D" parent="NavigationRegion3D/Floor Offset/FloorMesh6"]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Floor Offset/FloorMesh6/Floor"]
+shape = SubResource("BoxShape3D_ccia1")
+
+[node name="Env" type="Node3D" parent="."]
+
+[node name="Obstacle1" type="Node3D" parent="Env"]
+
+[node name="Obstacle1" type="StaticBody3D" parent="Env/Obstacle1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.5)
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle1/Obstacle1"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle1/Obstacle1"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="nav_Obstacle1" type="NavigationObstacle3D" parent="Env/Obstacle1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -7.5)
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle2" type="Node3D" parent="Env"]
+
+[node name="Obstacle2" type="StaticBody3D" parent="Env/Obstacle2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 2.5)
+collision_layer = 2
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle2/Obstacle2"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle2/Obstacle2"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="nav_Obstacle2" type="NavigationObstacle3D" parent="Env/Obstacle2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.5, 0, 2.5)
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle3" type="Node3D" parent="Env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 2.5)
+
+[node name="nav_Obstacle3" type="NavigationObstacle3D" parent="Env/Obstacle3"]
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle3" type="StaticBody3D" parent="Env/Obstacle3"]
+collision_layer = 2
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle3/Obstacle3"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle3/Obstacle3"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="Obstacle4" type="Node3D" parent="Env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -29.0965, 0, -9.33749)
+
+[node name="nav_Obstacle3" type="NavigationObstacle3D" parent="Env/Obstacle4"]
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle3" type="StaticBody3D" parent="Env/Obstacle4"]
+collision_layer = 2
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle4/Obstacle3"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle4/Obstacle3"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="Obstacle5" type="Node3D" parent="Env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -48.3864, 0, -24.2604)
+
+[node name="nav_Obstacle3" type="NavigationObstacle3D" parent="Env/Obstacle5"]
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle3" type="StaticBody3D" parent="Env/Obstacle5"]
+collision_layer = 2
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle5/Obstacle3"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle5/Obstacle3"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="Obstacle6" type="Node3D" parent="Env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.1306, 0, -40.5335)
+
+[node name="nav_Obstacle3" type="NavigationObstacle3D" parent="Env/Obstacle6"]
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle3" type="StaticBody3D" parent="Env/Obstacle6"]
+collision_layer = 2
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle6/Obstacle3"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle6/Obstacle3"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="Obstacle7" type="Node3D" parent="Env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.89951, 0, -34.9789)
+
+[node name="nav_Obstacle3" type="NavigationObstacle3D" parent="Env/Obstacle7"]
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle3" type="StaticBody3D" parent="Env/Obstacle7"]
+collision_layer = 2
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle7/Obstacle3"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle7/Obstacle3"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="Obstacle8" type="Node3D" parent="Env"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20.0196, 0, -24.1539)
+
+[node name="nav_Obstacle3" type="NavigationObstacle3D" parent="Env/Obstacle8"]
+radius = 1.5
+height = 4.0
+
+[node name="Obstacle3" type="StaticBody3D" parent="Env/Obstacle8"]
+collision_layer = 2
+collision_mask = 11
+
+[node name="Mesh" type="MeshInstance3D" parent="Env/Obstacle8/Obstacle3"]
+mesh = SubResource("BoxMesh_r6f0a")
+skeleton = NodePath("../../../..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Env/Obstacle8/Obstacle3"]
+shape = SubResource("BoxShape3D_0ptyi")
+
+[node name="Units" type="Node" parent="."]
+
+[node name="Generic V2 1" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33981, 0.0604334, -4.09938)
+unit_data = ExtResource("4_aooaf")
+player = NodePath("../../Factions/Human")
+personalInventory = SubResource("Resource_wpolb")
+
+[node name="Generic V2 173" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.33981, 0.0604334, -13.3768)
+unit_data = ExtResource("3_f4rqo")
+player = NodePath("../../Factions/AI")
+
+[node name="Generic V2 175" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.72611, 0.0604334, -13.3768)
+unit_data = ExtResource("10_xptho")
+player = NodePath("../../Factions/AI")
+
+[node name="Generic V2 174" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13.5827, 0.0604334, -5.79888)
+unit_data = ExtResource("4_gyaws")
+player = NodePath("../../Factions/NPC")
+
+[node name="Generic V2 2" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.15089, 0.0604334, -4.09938)
+unit_data = ExtResource("4_aooaf")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 3" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.94547, 0.0604334, -8.67437)
+unit_data = ExtResource("3_f4rqo")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 4" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.94547, 0.0604334, -10.2401)
+unit_data = ExtResource("4_gyaws")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 5" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.70922, 0.0604334, -8.67437)
+unit_data = ExtResource("3_f4rqo")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 6" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.70922, 0.0604334, -10.2401)
+unit_data = ExtResource("4_gyaws")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 7" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2373, 0.0604334, -8.67437)
+unit_data = ExtResource("3_f4rqo")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 8" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.2373, 0.0604334, -10.2401)
+unit_data = ExtResource("4_gyaws")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 9" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8204, 0.0604334, -8.67437)
+unit_data = ExtResource("3_f4rqo")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 10" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8204, 0.0604334, -10.2401)
+unit_data = ExtResource("4_gyaws")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 11" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.2693, 0.0604334, -8.67437)
+unit_data = ExtResource("3_f4rqo")
+player = NodePath("../../Factions/Human")
+
+[node name="Generic V2 12" parent="Units" node_paths=PackedStringArray("player") instance=ExtResource("7_0tu32")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -14.2693, 0.0604334, -10.2401)
+unit_data = ExtResource("4_gyaws")
+player = NodePath("../../Factions/Human")
+
+[node name="Factions" type="Node" parent="."]
+
+[node name="Human" parent="Factions" instance=ExtResource("6_b2vrj")]
+factionName = "Human"
+teamcolor = Color(0.231373, 0.458824, 1, 1)
+
+[node name="AI" parent="Factions" instance=ExtResource("6_b2vrj")]
+factionName = "AI"
+factionType = 1
+teamcolor = Color(1, 0, 0, 1)
+
+[node name="NPC" parent="Factions" instance=ExtResource("6_b2vrj")]
+factionName = "NPC"
+factionType = 2
+teamcolor = Color(1, 1, 0, 1)

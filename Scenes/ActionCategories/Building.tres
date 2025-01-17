@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://0g313qg5ep0u"]
+
+[ext_resource type="Texture2D" uid="uid://bqylqm1p00wfv" path="res://Assets/Public Domain/Kenney/64x64/tool_hammer.png" id="1_aooeb"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_efw0w"]
+
+[resource]
+script = ExtResource("2_efw0w")
+name = "Building"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_aooeb")

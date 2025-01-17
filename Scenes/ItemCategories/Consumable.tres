@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://d1wbdfmggrtjr"]
+
+[ext_resource type="Texture2D" uid="uid://c4cbxhg4qvyyq" path="res://Assets/Unity Assets/Clean Vector Icons/T_2_bottle_half_.png" id="1_6c304"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_jny32"]
+
+[resource]
+script = ExtResource("1_jny32")
+name = "Consumable"
+color = Color(0.529412, 0.807843, 0.921569, 1)
+icon = ExtResource("1_6c304")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://bh4ohu6lfrg7h"]
+
+[ext_resource type="Texture2D" uid="uid://bqylqm1p00wfv" path="res://Assets/Public Domain/Kenney/64x64/tool_hammer.png" id="1_n2kig"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_18ans"]
+
+[resource]
+script = ExtResource("2_18ans")
+name = "Healing"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_n2kig")

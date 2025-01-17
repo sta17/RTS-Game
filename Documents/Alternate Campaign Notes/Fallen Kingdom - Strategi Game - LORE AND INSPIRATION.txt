@@ -1,0 +1,108 @@
+Fall of the Kingdom of Latoliast.
+
+
+Story:
+
+Our female succubus hero, gets recruited into a band of mercenaries, experience the pivotal battle between the humans and goblins, the Death of Karnweld and the Crown Prince, them getting blamed for it, despite the requesting aid. 
+
+A critical developement here is that due to the battle ending in near desaster, the thing is that the good nobles, gets killed more / weakened a lot, unbalancing the internal politics of the realm, even thought its a victory.
+
+Later, having become a bandit group to survive, they encounter the new crown prince, battle and kill him, meet the Black Prince and after a fight, end up allying with him, is reunited with Karnweld.
+
+They travel to the home of the dwarves and ally with them, break of the dwarven loyalties to their high king in the process, creating the "dark dwarves".
+
+They also ally with the goblins, despite the battle, after they figure out how the goblins where pushed into their land and many kingdoms standing by and watching it.
+
+
+Characters:
+ - Anthis Shadewind: 
+	- Class: Succubus Captain
+	- Species: Succubus
+	- Essence Feeding
+		- Buff Devouring for mana.
+	- Shadow Armor
+		- Evasion
+	- Black Curse
+		- Symbol: BTNability_priest_surgeofdarkness.blp
+	- Disguise
+		- Human/Succubus Features
+
+- Maraknist Arcanister:
+	- Class: Hedge Wizard
+	- Species: Human
+	- Lightning Shield
+	- Ancient Arts
+		- Symbol: Rainy Sky (/Tranquility)
+		- Healing
+	- Entanging Roots
+		- Disabling
+	- Shroud of the Deep Grove
+		- Symbol: Owl (/Sentinel)
+		- Fog/Invisibility
+
+ - Granis:
+	- Class: Bandit/Mercenary Captain
+	- Species: Human
+	- Bombs, tricks, general fighting abilities.
+
+ - "Lord" Karnweld:
+	- Class: Warrior/Rider/Dark Knight? later Undead Knight
+	- Species: Human, later Undead
+
+ - Black Prince:
+	- Class: Knight later Dark Knight
+	- Species: Human
+	- The Prince of the kingdom of Latoliast, and later one of the leader of New Latoliast
+
+
+Major Factions:
+ - Latoliast:
+	- Units:
+		- Bandits
+		- Dark Knights
+		- Witches and Succubus
+			- Keywords: Disruption, Self Healing, Self Empowerment, Dark Offensive, Subterfuge.
+			- Curses and Black/Dark Magic.
+			- Disruption and power stealing.
+			- Rituals:
+				- Self Healing
+				- Empowerments
+			- Coven Sorceress:
+				- Curse
+				- Silence (/anti magic?)
+				- Shadow Strike
+				- Succubus Form
+			- Succubus:
+				- Life Drain
+				- Devour Magic
+		- Hedge Mage
+			- Hedge Mage and Wizard are rural, magicians, following nearly forgotten traditions, rather than the more established paths.
+			- Their abilities are affected by what their lineage has picked up over the years, but also the need of the comunity.
+	- Heroes:
+		- Succubus Captain:
+	
+		- Hedge Wizard:
+			- Keywords: Nature Healing, Nature/Forest Magic, Familiars
+			- Nature Healing:
+				- Healing over time.
+			- Nature magic:
+				- Lightning Attacks?
+				- Water Attacks?
+			- Disabling Roots
+			- Familiar:
+				- Abilities depend on the Familiar.
+			- Rituals:
+				- Fog Hiding
+				- Healing?
+		- Dark Knight:
+		- Mercenary Captain:
+		
+- Templars:
+	- Royalists,Extremist Templars
+- Goblins:
+- Dwarves:
+	- let them be somewhat neutral, standard dwarves? Would allow for a reuse in the spider campaign. Maybe give some reskin, so symbolise their break, oath breakers, etc.
+
+
+Minor Factions:
+WORLD MAP:

@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="InventoryItem" load_steps=9 format=3 uid="uid://eu5erm2e6v0n"]
+
+[ext_resource type="Resource" uid="uid://dqn2wdgj4uf31" path="res://Scenes/ItemCategories/Slot Types/Weapons.tres" id="1_5ftti"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_rkpj7"]
+[ext_resource type="Resource" uid="uid://b8mpjs04pnha7" path="res://Scenes/ItemCategories/Slot Types/MainHand.tres" id="2_en53u"]
+[ext_resource type="Resource" uid="uid://bwlnp3ivr86xm" path="res://Scenes/ItemCategories/Slot Types/OffHand.tres" id="3_kqkxi"]
+[ext_resource type="Resource" uid="uid://cg8p0j5031gpr" path="res://Scenes/ItemCategories/Artifact.tres" id="4_ikpia"]
+[ext_resource type="Resource" uid="uid://jn10rfaqwwlu" path="res://Scenes/ItemCategories/Slot Types/OneHand.tres" id="5_as3tf"]
+[ext_resource type="Texture2D" uid="uid://juau1np0g2dw" path="res://Assets/Public Domain/Items/sword 32.png" id="5_ay6nw"]
+[ext_resource type="Script" path="res://Scripts/Item/Inventory_item.gd" id="6_tvfks"]
+
+[resource]
+script = ExtResource("6_tvfks")
+id = 2
+max_stack = 1
+name = "Grand Sword"
+icon = ExtResource("5_ay6nw")
+properties = {
+"Lore": &"A Sword of Old, mystically forged with lost means",
+"Rank": ExtResource("4_ikpia")
+}
+tooltip = ""
+lore = "A Sword of Old, mystically forged with lost means"
+rank = ExtResource("4_ikpia")
+categories = Array[ExtResource("1_rkpj7")]([ExtResource("1_5ftti"), ExtResource("2_en53u"), ExtResource("3_kqkxi"), ExtResource("4_ikpia"), ExtResource("5_as3tf")])

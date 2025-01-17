@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://b1kiytc7a5fys"]
+
+[ext_resource type="Texture2D" uid="uid://eo5twr8kdogo" path="res://Assets/Public Domain/Kenney/64x64/crown_a.png" id="1_w0fyy"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_5oga4"]
+
+[resource]
+script = ExtResource("2_5oga4")
+name = "Channelling"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_w0fyy")

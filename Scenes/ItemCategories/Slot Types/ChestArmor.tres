@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://duc53yimt3wum"]
+
+[ext_resource type="Texture2D" uid="uid://opoi4uif5sqi" path="res://Assets/Mine/UI/ChestArmor.png" id="1_gi6by"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_msinu"]
+
+[resource]
+script = ExtResource("2_msinu")
+name = "Chest Armor"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_gi6by")

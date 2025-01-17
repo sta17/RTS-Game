@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=2 format=3 uid="uid://bkc3fa1ux8yai"]
+
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_ypu4n"]
+
+[resource]
+script = ExtResource("1_ypu4n")
+name = "Unique"
+color = Color(0.490196, 0, 1, 1)

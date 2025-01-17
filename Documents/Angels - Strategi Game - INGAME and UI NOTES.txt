@@ -1,0 +1,57 @@
+STATS:
+- Body,
+	- Each point increases Constitution by 1.
+	- Increase Damage of Strength, Body Based Attacks.
+- Finesse,
+	- Each point increases armor by 0.30 and decreases attack cooldown by 0.02.
+	- Increase Damage of Finesse Based Attacks.
+- Constitution,
+	- Each point increases hit points by 25 and hit point regeneration by 0.05.
+- Intelligence, Mind
+	- Each point increases Aether by 1.
+	- Increase Damage of Aether Based Attacks.
+- Aether,
+	- Each point increases Magic by 15 and mana regeneration by 0.05.
+
+
+ITEM RANK:	- HEXCOLOR:
+Artifact	- ff8c00
+Unique		- 7D00FF / 8b00ff
+Rare		- 0000FF
+Uncommon	- 00FF00
+Common		- FFFFFF
+
+Consumable	- 87ceeb
+
+History Title Text Color	- ffcc00
+History / Lore text color	- ffdead
+
+
+ARMOR TYPES:
+Heavy
+Medium
+Light
+Unarmored
+Structure
+Fortified
+Hero
+Invulnerable
+
+ATTACK TYPES:
+Normal
+Piercing
+Magic
+Siege
+Hero
+Full
+
+
+INSPIRATION:
+https://warcraft.wiki.gg/wiki/Warcraft_III_armor_and_attack_types
+
+RESOURCES:
+Gold
+Lumber
+Aether
+Stone
+Food

@@ -1,0 +1,52 @@
+[gd_resource type="Resource" script_class="Inv" load_steps=13 format=3 uid="uid://b34utgs3n7ucq"]
+
+[ext_resource type="Script" path="res://Scripts/Item/Inventory.gd" id="1_ssxg8"]
+[ext_resource type="Resource" uid="uid://srjiv1uy2k12" path="res://Scenes/Items/Book.tres" id="2_vpenc"]
+[ext_resource type="Script" path="res://Scripts/Item/Inv_Slot.gd" id="3_g3pk2"]
+[ext_resource type="Resource" uid="uid://eu5erm2e6v0n" path="res://Scenes/Items/GrandSword.tres" id="4_rxlen"]
+[ext_resource type="Resource" uid="uid://cypmx43ckbv7x" path="res://Scenes/Items/Knife.tres" id="5_1yrue"]
+[ext_resource type="Resource" uid="uid://rxl2u6vrqgje" path="res://Scenes/Items/Sword.tres" id="6_6rvu6"]
+
+[sub_resource type="Resource" id="Resource_lwps1"]
+script = ExtResource("3_g3pk2")
+Item = ExtResource("2_vpenc")
+amount = 2
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_hpm4q"]
+script = ExtResource("3_g3pk2")
+Item = ExtResource("4_rxlen")
+amount = 1
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_o8l6n"]
+script = ExtResource("3_g3pk2")
+Item = ExtResource("5_1yrue")
+amount = 1
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_b0jxy"]
+script = ExtResource("3_g3pk2")
+Item = ExtResource("6_6rvu6")
+amount = 1
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_hje0o"]
+script = ExtResource("3_g3pk2")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_hxq6f"]
+script = ExtResource("3_g3pk2")
+amount = 0
+index = 0
+max_stack = -1
+
+[resource]
+script = ExtResource("1_ssxg8")
+slots = Array[ExtResource("3_g3pk2")]([SubResource("Resource_lwps1"), SubResource("Resource_hpm4q"), SubResource("Resource_o8l6n"), SubResource("Resource_b0jxy"), SubResource("Resource_hje0o"), SubResource("Resource_hxq6f")])

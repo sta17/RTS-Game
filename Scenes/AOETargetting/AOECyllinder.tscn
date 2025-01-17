@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://dwb43w384q5cf"]
+
+[ext_resource type="Script" path="res://Scripts/Map Objects/AOETargetting.gd" id="1_fnxlr"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_0line"]
+
+[node name="Area3D" type="Area3D" node_paths=PackedStringArray("colliderShape")]
+collision_layer = 8
+collision_mask = 8
+script = ExtResource("1_fnxlr")
+colliderShape = NodePath("CollisionShape3D")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_0line")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_exited" from="." to="." method="_on_body_exited"]

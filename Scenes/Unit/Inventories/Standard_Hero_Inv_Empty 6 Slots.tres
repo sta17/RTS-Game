@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="Inv" load_steps=9 format=3 uid="uid://c3gsaployk70c"]
+
+[ext_resource type="Script" path="res://Scripts/Item/Inventory.gd" id="1_okdrh"]
+[ext_resource type="Script" path="res://Scripts/Item/Inv_Slot.gd" id="2_iyft4"]
+
+[sub_resource type="Resource" id="Resource_644j5"]
+script = ExtResource("2_iyft4")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_dtg4u"]
+script = ExtResource("2_iyft4")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_3fvfb"]
+script = ExtResource("2_iyft4")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_p1bub"]
+script = ExtResource("2_iyft4")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_ilc0r"]
+script = ExtResource("2_iyft4")
+amount = 0
+index = 0
+max_stack = -1
+
+[sub_resource type="Resource" id="Resource_120qm"]
+script = ExtResource("2_iyft4")
+amount = 0
+index = 0
+max_stack = -1
+
+[resource]
+script = ExtResource("1_okdrh")
+slots = Array[ExtResource("2_iyft4")]([SubResource("Resource_644j5"), SubResource("Resource_dtg4u"), SubResource("Resource_3fvfb"), SubResource("Resource_p1bub"), SubResource("Resource_ilc0r"), SubResource("Resource_120qm")])

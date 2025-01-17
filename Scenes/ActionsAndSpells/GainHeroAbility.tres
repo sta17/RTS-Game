@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActionData" load_steps=5 format=3 uid="uid://bjy0x1xihq48f"]
+
+[ext_resource type="Resource" uid="uid://dcvo67ckek707" path="res://Scenes/ActionCategories/Menu.tres" id="1_5qe2t"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_b2be8"]
+[ext_resource type="Texture2D" uid="uid://bjlrtffpmbcyh" path="res://Assets/Public Domain/Kenney/64x64/plus.png" id="2_dp0nb"]
+[ext_resource type="Script" path="res://Scripts/UI/action_data.gd" id="3_n2nhk"]
+
+[resource]
+script = ExtResource("3_n2nhk")
+id = 6
+name = "GainHeroAbility"
+icon = ExtResource("2_dp0nb")
+tooltip = ""
+properties = {}
+categories = Array[ExtResource("1_b2be8")]([ExtResource("1_5qe2t")])

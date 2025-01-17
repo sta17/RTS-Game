@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://ct7sas37aygfs"]
+
+[ext_resource type="Texture2D" uid="uid://csjuterdiok3o" path="res://Assets/Mine/UI/Pants.png" id="1_qyrpk"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_vqw4s"]
+
+[resource]
+script = ExtResource("2_vqw4s")
+name = "Pants"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_qyrpk")

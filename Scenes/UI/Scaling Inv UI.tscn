@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=3 uid="uid://budj27f66plei"]
+
+[ext_resource type="Texture2D" uid="uid://dewlhn6xtp463" path="res://Assets/Public Domain/Items/Frame.png" id="1_4q20c"]
+[ext_resource type="Script" path="res://Scripts/Item/Scaling Inv UI.gd" id="1_7kt2n"]
+[ext_resource type="PackedScene" uid="uid://cnp2ce2opdday" path="res://Scenes/UI/inv_ui_slot 64.tscn" id="2_qvrhn"]
+
+[node name="Control" type="Control"]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7kt2n")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+custom_minimum_size = Vector2(128, 128)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -64.0
+offset_top = -64.0
+offset_right = 64.0
+offset_bottom = 64.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_4q20c")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 84.0
+offset_bottom = 84.0
+columns = 4
+
+[node name="Control" parent="NinePatchRect/GridContainer" instance=ExtResource("2_qvrhn")]
+layout_mode = 2

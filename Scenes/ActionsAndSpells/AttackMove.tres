@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ActionData" load_steps=6 format=3 uid="uid://0cvlkl6yg4vd"]
+
+[ext_resource type="Texture2D" uid="uid://cynfhaseptsa7" path="res://Assets/Public Domain/Kenney/64x64/sword.png" id="1_g4inh"]
+[ext_resource type="Resource" uid="uid://c5v83geur7hcl" path="res://Scenes/ActionCategories/DataUpdate.tres" id="1_mgf0j"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_wk10m"]
+[ext_resource type="Resource" uid="uid://5ow6yv46g4fs" path="res://Scenes/ActionCategories/Movement.tres" id="2_71tjy"]
+[ext_resource type="Script" path="res://Scripts/UI/action_data.gd" id="2_suh7g"]
+
+[resource]
+script = ExtResource("2_suh7g")
+id = 1
+name = "Attack Move"
+icon = ExtResource("1_g4inh")
+tooltip = ""
+properties = {}
+categories = Array[ExtResource("1_wk10m")]([ExtResource("1_mgf0j"), ExtResource("2_71tjy")])

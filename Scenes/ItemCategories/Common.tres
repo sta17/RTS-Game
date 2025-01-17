@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=2 format=3 uid="uid://dx53egd7sydle"]
+
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_tivg2"]
+
+[resource]
+script = ExtResource("1_tivg2")
+name = "Common"
+color = Color(1, 1, 1, 1)

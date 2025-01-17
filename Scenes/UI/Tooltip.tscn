@@ -1,0 +1,81 @@
+[gd_scene load_steps=8 format=3 uid="uid://cjnrna7s0vyot"]
+
+[ext_resource type="Script" path="res://Scripts/UI/Tooltip.gd" id="1_0cc77"]
+[ext_resource type="Texture2D" uid="uid://dewlhn6xtp463" path="res://Assets/Public Domain/Items/Frame.png" id="1_a2nyx"]
+[ext_resource type="LabelSettings" uid="uid://0agy3ucr0npv" path="res://Godot Setting Files/White 12 label Text.tres" id="2_5is8y"]
+[ext_resource type="LabelSettings" uid="uid://bmk8pls7hohta" path="res://Godot Setting Files/White 10 label Text.tres" id="3_cn4ne"]
+[ext_resource type="LabelSettings" uid="uid://b7xq3w1vwmlt1" path="res://Godot Setting Files/White 8 label Text.tres" id="4_jgy6j"]
+[ext_resource type="LabelSettings" uid="uid://bvpbceywhveqx" path="res://Godot Setting Files/Yellow 10 Label Text.tres" id="5_f0y3j"]
+[ext_resource type="LabelSettings" uid="uid://dfk28m3jdugjl" path="res://Godot Setting Files/Sandy 8 Label Text.tres" id="6_oi7mv"]
+
+[node name="Tooltip" type="Control"]
+z_index = 1
+layout_mode = 3
+anchors_preset = 0
+offset_right = 120.0
+offset_bottom = 120.0
+script = ExtResource("1_0cc77")
+
+[node name="Anchor" type="Control" parent="."]
+custom_minimum_size = Vector2(120, 120)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="Anchor"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_a2nyx")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="MarginContainer" type="MarginContainer" parent="Anchor/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 4
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 4
+theme_override_constants/margin_bottom = 4
+
+[node name="GridContainer" type="GridContainer" parent="Anchor/NinePatchRect/MarginContainer"]
+layout_mode = 2
+
+[node name="Tooltip_Name" type="Label" parent="Anchor/NinePatchRect/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "Item Name Her"
+label_settings = ExtResource("2_5is8y")
+
+[node name="Tooltip_Rank" type="Label" parent="Anchor/NinePatchRect/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "Rank"
+label_settings = ExtResource("3_cn4ne")
+
+[node name="Tooltip_Properties" type="Label" parent="Anchor/NinePatchRect/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "Item Name Here"
+label_settings = ExtResource("4_jgy6j")
+
+[node name="Tooltip_Lore_Title" type="Label" parent="Anchor/NinePatchRect/MarginContainer/GridContainer"]
+layout_mode = 2
+text = "Lore"
+label_settings = ExtResource("5_f0y3j")
+
+[node name="Tooltip_Lore_Desc" type="Label" parent="Anchor/NinePatchRect/MarginContainer/GridContainer"]
+custom_minimum_size = Vector2(110, 12)
+layout_mode = 2
+text = "S"
+label_settings = ExtResource("6_oi7mv")
+autowrap_mode = 3

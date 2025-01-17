@@ -1,0 +1,83 @@
+[gd_scene load_steps=17 format=3 uid="uid://bgsde05oclowk"]
+
+[ext_resource type="Script" path="res://Scripts/Building_Handler_V2.gd" id="1_girux"]
+[ext_resource type="Script" path="res://Scripts/player_object_handler.gd" id="2_y14mc"]
+[ext_resource type="PackedScene" uid="uid://llai6kkipmee" path="res://Scenes/Map Objects/Selection_Circle.tscn" id="3_mokuy"]
+[ext_resource type="Animation" uid="uid://dd5sj4xovyoc2" path="res://AnimationPlayer/Selection Flash Enemy.res" id="4_shfe4"]
+[ext_resource type="Animation" uid="uid://cxexrllrpdmho" path="res://AnimationPlayer/Selection Flash Neutral.res" id="5_yrsrt"]
+[ext_resource type="Animation" uid="uid://8vl0q0e50dok" path="res://AnimationPlayer/Selection Flash Player.res" id="6_3vkt3"]
+[ext_resource type="Animation" uid="uid://uql3wxbg4fga" path="res://AnimationPlayer/Unit_Flash.res" id="7_8hp3y"]
+[ext_resource type="PackedScene" uid="uid://cc60u3e3mc1sk" path="res://Scenes/Unit Component/HealthBar.tscn" id="8_pkits"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_j1lr8"]
+size = Vector3(3, 4, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gg6pg"]
+albedo_color = Color(1, 0.384314, 0, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_jcbc4"]
+material = SubResource("StandardMaterial3D_gg6pg")
+size = Vector3(3, 3, 3)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_b2n01"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="PrismMesh" id="PrismMesh_o6bvq"]
+material = SubResource("StandardMaterial3D_b2n01")
+size = Vector3(3.5, 1.5, 3.5)
+
+[sub_resource type="Animation" id="Animation_1kwv2"]
+length = 0.001
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k3sc2"]
+_data = {
+"RESET": SubResource("Animation_1kwv2"),
+"Selection Flash Enemy": ExtResource("4_shfe4"),
+"Selection Flash Neutral": ExtResource("5_yrsrt"),
+"Selection Flash Player": ExtResource("6_3vkt3"),
+"Unit_Flash": ExtResource("7_8hp3y")
+}
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_wpxrw"]
+viewport_path = NodePath("SubViewport")
+
+[node name="StaticBody3D" type="StaticBody3D" node_paths=PackedStringArray("player_object")]
+collision_layer = 10
+collision_mask = 2
+script = ExtResource("1_girux")
+player_object = NodePath("Node")
+
+[node name="Node" type="Node" parent="." node_paths=PackedStringArray("target_provider")]
+script = ExtResource("2_y14mc")
+target_provider = NodePath("..")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.5, 0)
+shape = SubResource("BoxShape3D_j1lr8")
+
+[node name="Graphic" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+mesh = SubResource("BoxMesh_jcbc4")
+skeleton = NodePath("")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Graphic"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.1, 0)
+mesh = SubResource("PrismMesh_o6bvq")
+
+[node name="Selected" parent="." instance=ExtResource("3_mokuy")]
+
+[node name="AttackTimer" type="Timer" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_k3sc2")
+}
+
+[node name="Healthbar" parent="." instance=ExtResource("8_pkits")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 5.57016, 0)
+texture = SubResource("ViewportTexture_wpxrw")
+
+[node name="NavigationObstacle3D" type="NavigationObstacle3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+radius = 2.0
+height = 2.0

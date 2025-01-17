@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Unit_data" load_steps=3 format=3 uid="uid://mvcerlecud1p"]
+
+[ext_resource type="Script" path="res://Scripts/Map Objects/unit_data.gd" id="1_2cvak"]
+[ext_resource type="Texture2D" uid="uid://d0kx7rjejmfak" path="res://Assets/Mine/Godot Helpers/CreatureIcon 64.png" id="2_f608p"]
+
+[resource]
+script = ExtResource("1_2cvak")
+unit_icon = ExtResource("2_f608p")
+name = "Big Health Unit"
+hp = 100.0
+hp_regen = 0.0
+aether = 0.0
+aether_regen = 0.0
+attack = 1.0
+attack_cooldown = 3.0
+attack_range = 1.0
+defense = 1.0
+speed = 1.0
+color = Color(0, 0.976471, 0, 1)

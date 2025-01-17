@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://ctltefp6ip0gh"]
+
+[ext_resource type="Texture2D" uid="uid://cc7hfnrj136o8" path="res://Assets/Mine/UI/Shield_64.png" id="1_u65pi"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_g6d6u"]
+
+[resource]
+script = ExtResource("2_g6d6u")
+name = "Shield"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_u65pi")

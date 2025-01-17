@@ -1,0 +1,27 @@
+Warcraft 3 basic faction setup:
+Units:
+- builder 
+- basic fighter
+- heavy / cavalry fighter
+- Ranged fighter
+- siege unit
+- caster 1
+- caster 2
+- caster 3 (maybe)
+- air unit 1
+- air unit 2
+- air unit 3 (maybe)
+- 4 heroes
+
+- Buildings:
+- town hall, 3 levels,
+- tower
+- farm
+- alter
+- barrack / unit production
+- armor upgrade center,
+- resource drop off point
+- magic shop
+- magic caster production place
+- siege
+- air production

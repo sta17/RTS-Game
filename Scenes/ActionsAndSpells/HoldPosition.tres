@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActionData" load_steps=5 format=3 uid="uid://q0xys5nxsnh"]
+
+[ext_resource type="Resource" uid="uid://d2qma41umysvw" path="res://Scenes/ActionCategories/Guard.tres" id="1_s1h6h"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_s6ucy"]
+[ext_resource type="Script" path="res://Scripts/UI/action_data.gd" id="2_d4pun"]
+[ext_resource type="Texture2D" uid="uid://cfvssmk1eob05" path="res://Assets/Public Domain/Kenney/64x64/shield.png" id="2_swmcj"]
+
+[resource]
+script = ExtResource("2_d4pun")
+id = 2
+name = "Hold Position"
+icon = ExtResource("2_swmcj")
+tooltip = ""
+properties = {}
+categories = Array[ExtResource("1_s6ucy")]([ExtResource("1_s1h6h")])

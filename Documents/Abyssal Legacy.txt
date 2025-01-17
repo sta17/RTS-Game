@@ -1,0 +1,835 @@
+Abyssal Bloodline
+
+================================
+## NOTES AND INSPIRATION ##::
+================================
+
+GODS::
+
+Various Models, have at the baseline 2 major and 4 minor gods, for total of 6 per faction, Some Major, both ingame and lore, other minor.
+	- Could Increase this to give certain routes / major gods more choice, with a few replacebles, like the former god of thieves maybe, not being available to "Ares".
+
+Potnia
+	- Title for goddess,
+	   One of the palace and one of wild / animals.
+
+https://en.wikipedia.org/wiki/Potnia
+
+CRUSADERS::
+
+Potnia Pallas (Athena)
+	- Palace goddess and protector originally, now more a defense.
+	- The Priestess where the original main mask users of medusas, Potnia Theron took over this.
+	- had Snake assossitaions, taken over by Potnia Theron.
+	- The generic female war figure inspiration
+	- Has a feud with Potnia Theron over the murder of her father, who is being digested inside Potnia Theron, which is what causing her madness. Curing this / killing him, heals the last of the madness from Potnia Theron, causing a reconsiliation.
+	- Woreship abandoned by the underworld faction,
+	- Woreshippers and priesthood absorbed by Potnia Theron in the underworld faction areas
+	- https://en.wikipedia.org/wiki/Sophia_(wisdom)
+		- Should also have another side to her, less Warlike, inwhich she focuses on Wisdom and knowledge.
+
+Apollo
+	- https://en.wikipedia.org/wiki/Apollo
+	- brother of Potnia Theron,
+	- To much favour for the "crusaders" let to his abandonment by the underworld faction, but not ecually as hated as Potnia Pallas 
+	- priesthood of Potnia Theron they know how to call upon him, given him being the brother and he playes a part in the relation with Potnia Theron.
+	- Apollo is god of oracles, healing, archery, music and arts, light, knowledge, herds and flocks, and protection of the young.
+	- ?Helps break the themes?
+		- Propobly inregards to not being straigth up archtypes, with a healing dude or something like that.
+	- Potnia Theron is Artemis, which is the sister of Apollo, so having them being similar is an idea.
+	- Pull on Sun Imagery,
+		- https://en.wikipedia.org/wiki/Helios
+	- Credit with taking over some of the true sky power roles and assosations, if the Heavenly World asthetics is to be used, say he helped manage it after the death of Deus Moloch,
+		- The Role is splitt, with each of the followers giving it to their favoured god.
+		- https://en.wikipedia.org/wiki/Uranus_(mythology)
+		- https://www.pinterest.co.uk/stevenaan/disir-and-melusines/heavenly-world-second-world/
+		- https://www.pinterest.co.uk/stevenaan/disir-and-melusines/heavenly-forces/
+	- Have him take on more astrologoical and knowledge based themes
+
+Ares
+	- https://en.wikipedia.org/wiki/Ares
+	- Classical darker figure, zealot etc.
+	- Responsible for keeping Potnia Athena feud with Potnia Theron ongoing.
+	- Make also a little bit of a trickster to flesh out beyond the simple.
+	- Has taken on something of a role of King of Gods, but is not wholly recognised as such, Potnia Pallas, don't view him as such, and thus her circle dont pay it any heed, but his circle do.
+	- Cares about unity and control.
+	- Use King of the World as one of his main Divine Title, Rex Mundi
+	- Give him a bit of a Knight themed in addition to the sky father and Ares / War God themes.
+
+Former God of Thieves
+	- As the God of Thieves, he was called the King of Thieves.
+	- Originally a god of thieves, became a protector against them, and eventually a god of the poor and the merchents, with knights of his own.
+		- Traveling People prayed to him, to spare them, eventually he became a protector of travellers, and the also the poor.
+		- Was viewed more as a bribe, something that one hopped could be appeased.
+	- Got Knights and charities for the poor.
+	- A Protector Being.
+	- He is a bit more based on how gods actually worked, that they could be appeased also and evolved over time.
+	- At time, he is currently also called the King of Thieves still, due to how merchents sometimes still offer prayers and gifts, they are his lot still, like the thieves of old.
+		- Or a variant of the Merchant have upgraded since the time of King of Thieves, scoundral to Rich Merchent, but still the god of the greedy.
+
+Hera,
+	- https://en.wikipedia.org/wiki/Hera
+	- Goddess of Marriage, women, marital harmony, and the protector of women during childbirth
+	- use to add to the complicated family, wife of Deus Moloch,
+	- Mother of Ares and Potnia Pallas
+	- Heras attributes and tales as inspiration,
+	- should be the mother of the Generic War God / Areas
+	- Take other inspirations aswell?
+		- https://en.wikipedia.org/wiki/Demeter
+		- https://en.wikipedia.org/wiki/Hestia
+		- https://en.wikipedia.org/wiki/Themis
+		- With the Death of Deus Moloch, she took some sky assosations maybe? Control of weather and some harvest, storm to strike her enemies?
+		- A bit of assosations with Order and sacred law?
+			- Takes up after the death of Deus Moloch
+		- Some Aggricultural and Cow assosations / Pastorial assosations
+	- Its Hera, as a result of husbands fall and death, she became domineering, "Ares" handled it well as he was seen as good already, Potnia Pallas it had no effect on as she was already indipendant, but for Aphrodite it was horried, to much pressure.
+
+Lady of the Lake
+	- https://en.wikipedia.org/wiki/Lady_of_the_Lake
+	- A Water Maid type character, fills in another minor god character.
+End::
+
+UNDERWORLD::
+
+Potnia Theron
+	- Lady/Queen of Animals
+		- https://en.wikipedia.org/wiki/Potnia_Theron
+	- Artemis Inspired
+		- https://en.wikipedia.org/wiki/Artemis
+	- Becomes Good, Starts as Neutral
+	- Have Medusas as priestess / caster unit.
+		- Medusas and Lampad favouring?
+	- Some Minotaur and cyclop support as well, plus maybe acidic blood upgrade?
+	- Focus is monsters, as she comes wilderness goddess, and has a history of warmongering, but by the time of the story, she should be more subdued.
+
+Prometheus
+	- Should be an interesting figure for use her
+	- https://en.wikipedia.org/wiki/Prometheus
+	- Mix in with the Cyclopes to produce the smithing god of the Underworld faction?
+		- Arges the Cyclops god
+	- God of forethought, fire, and crafty counsel
+
+Arges the Cyclops
+	- The first cyclopes are Arges (Bright), Brontes (Thunder), and Steropes (Lightning), and they made the lightning bolt of zeus.
+	- Lightning warriors and engineering focus?
+
+Dionysus like figure?
+	- Use Asterion for name? Asterion is the propoble name of the minotaur in real life.
+		- Diochus
+	- Main harvest, fertility and party figure?
+	- Already had underworld themes prior to the split,
+	- Never abandoned them, and so was continued
+	- Bull assosations
+	- Takes over as the main supporters of Minotaurs after the death of Deus Moloch
+	- Maybe some Maenad as a caster unit.
+
+Hecate like figure,
+	- she is a favoured of the lampads.
+	- While the lampads often help tend to Potnia Theron, but she is not always lucid, so some secondary god, should take over the role of being the main moon and magic figure, that manages that on a more daily basis.
+	- https://en.wikipedia.org/wiki/Selene
+
+End::
+
+FIENDS::
+	- Mix in abrahamic and greek?
+	- Satyrs for the classical devilry origins.
+	- They Where a thing before Deus Moloch, but he is what super charged them to be a real force.
+	- https://en.wikipedia.org/wiki/Pazuzu
+	- https://en.wikipedia.org/wiki/Nergal
+	- https://en.wikipedia.org/wiki/Baal
+	- https://en.wikipedia.org/wiki/Gargoyle_(monster)
+	- Use white or pale horses also into the mix?
+	- Should have other influences also, to make things more interesting, messopotamian, maybe some iranian, etc.
+		- They will still be a demon faction, but will have a more expanded roster and feel than just the sterotypes.
+	- https://en.wikipedia.org/wiki/Demon
+	- https://www.pinterest.co.uk/pin/19421842137962319/
+	
+	- Should have a few strong narrative gods, which clear history, rest can be weaker, monster god, can be a mesopotamian demon, creating clearer links. 
+		- Have Aphrodite and the Monster god (a mesopotamian demon) produce a son, who produces more demon children like the succubus god, and one of Children marries the Satyr King, giving the classical devilry imagery.
+		- Have a mesopotamian linage also come in, to make some strong connections, so that the character support each other, creating a little web.
+
+Cult of Deus Moloch
+	- It left its mark everywhere. Be a minor thing, the cult still has powers, but its more thought several minor beings playing for power.
+A Monster god, a base of some of the monster traits.
+	- Maybe also some relation to the Clear Devil god,
+Clear Devil God,
+	- main Evil type camp, considered the leading figure,
+Succubus God,
+	- Classical beauty type, should be decendant from Hathor the daughter? / Aphrodite, where she got the beauty.
+	- Hathor the daughter? / Aphrodite Should be the Mother or Grandmother
+	- still has good relations with Hathor the daughter? / Aphrodite, they enjoy each others company, even if covert and in disguises.
+Satyr King maybe?
+	- he brings the classical satyrs, if this is not brought in from other places, say he was rejected and thus found his camp with the Fiend, as somebody who rejected the agency of others.
+Pazuzu / Other demons and beings
+	- https://en.wikipedia.org/wiki/Pazuzu
+	- https://www.pinterest.co.uk/pin/19421842137962319/
+	- Should have other influences also, to make things more interesting, messopotamian, maybe some iranian, etc.
+	- https://en.wikipedia.org/wiki/Demon
+Lamashtu
+	- https://en.wikipedia.org/wiki/Lamashtu
+	- head of a lion, the teeth of a donkey, naked breasts, a hairy body, hands stained (with blood?), long fingers and fingernails, and the feet of a bird with sharp talons.
+End::
+
+ALL OR SHARED::
+
+Cult of Deus Moloch / Dyeus / Deus / Moloch
+- https://en.wikipedia.org/wiki/Dy%C4%93us
+- https://en.wikipedia.org/wiki/Deus
+- https://en.wikipedia.org/wiki/Moloch
+- https://en.wikipedia.org/wiki/Brazen_bull
+
+	- Starts out as a god of the standard sky father,
+	- turns into a demon lord of sacrifices.
+	- Becomes corrupt and is eventually devoured, but retains as a sacrifice method and cult controlled by others.
+	- With using His Names, Titles and Nicknames as Titles of power.
+	- Evil assosations, maybe have warlock as unit?
+	- Creator of the Minotaurs
+	- Has Bull assosations.
+	- Pull on sun and sky imagery also.
+	- Considered a dead god, but is still remebered and the cult is center of woreship for his successors.
+	- Focus is Beasts and monsters, more of the evil versions, power, etc.
+		- Give the Cyclops upgrade for minotaurs? Harder hitting variants?
+		
+	- At story start is presumed long dead, devoured by Potnia Theron in a greedy bid of cannibalism for more power, which resulted in her madness.
+		- The truth is that "Ares" and Potnia Theron battled with Deus Moloch after a confrontation went wrong. "Ares" stuffed the weakened Deus Moloch into the mouth of the weakened Potnia Theron, and the pain, causing her "madness" and causing her to loose lucidety. Several drops of his blood (as rocks and gems) as at times fallen out of Potnia Theron, after his supposed death, "Ares" has cleaned them up and destroyed them, when he has become aware of them, as usually blessings and blood and things can often be dated, thus hiding the fact that if Potnia Pallas stopped being led by her anger, she could have saved her father. Currently he is more of a tumor thing in the stomach of Potnia Theron, causing her pain and madness rather than a living being in his own right.
+		- The discovery and dating of such a blood rock is what causes the main story to kick of.
+		- The Gods can remove the power dating mechanism from said bless or object, but it has to be a concious decision, thus unconious, and it can be traced, to after his death, rather than the official story inwhich he was digested soon after his devouring.
+		- I call the blood, metal in the history, but blood is propobly something better for dating mechanism.
+
+Hathor the daughter? / Aphrodite
+	- https://en.wikipedia.org/wiki/Hathor
+	- https://en.wikipedia.org/wiki/Aphrodite
+	- daughter of Hera figure to spice things up a little
+	- Slight overlap in functions, in the same assosations with earth, Aggricultural and Cow assosations / Pastorial assosations, but also sex in general, etc.
+	- To deal with her domineering mother, she became careless with who she blessed and hanged out with.
+	
+	- Duel Nature:
+		- Assossiate her with the Fiends and Succubus in term of gameplay, but in practice a duel entity.
+		- Is the Mother of several Fiends Gods, or grandmother of them.
+		- As A Crusader God, she has nature themes, with Dryads and the likes.
+		- The Succubus God is going to take the Succubuses, so something else is going to be provider in her Fiend Path, but maybe having it as a creature of more indirect reference is for the best, as the theme was always a more indirect, and of carelessness with who she blessed.
+		- For the Underground, she could have either the Medusas, Lampads or Oread, depending on who is not taken.
+
+End::
+
+End::
+
+FACTIONS OR MINOR GROUPS::
+Iranians:
+- have them as part of Underworld faction, give some more flavour and change to the underworld faction,
+- their origin is that of an evil prince / "King" who tried to take the thrown and kidnap the bride of the good hero king and lost in a civil war, him and his followers fled, bringing their influence, magic and culture with them to the underworld where they found shelter.
+- Have them as one of the minor entities / "Gods", depending on their opposite, be either a Magi unit or a monster unit.
+- Should be one of the better groups, 
+	- The original evil King has all lost died or lost powers and they are mostly moving past it now.
+	- Many of their members want to establish contact with their mother culture again, just to experience the thing they have heard so much about, the thing their elder could not shut up about, others care less and more want the conflict of the elders to end.
+- Cultural Inspirations:
+	- https://en.wikipedia.org/wiki/Persian_gardens
+	- https://en.wikipedia.org/wiki/Iranian_architecture
+	- https://wiki.totalwar.com/images/8/86/BP2_image_2b.jpg
+		- while propobly not accuret, it adds to the nicer touch of influence.
+End::
+
+Creatures::
+
+Hecatoncheires:
+https://en.wikipedia.org/wiki/Hecatoncheires
+
+-\ AoMR_Lampades_icon_webp
+
+MEDUSA::
+Medusa - Medusa Mask
+https://en.wikipedia.org/wiki/Medusa
+
+- Medusa Mask
+	- Paralyse
+	- See Invisible
+	- Make Weapon do Type Damage
+	- Smite
+
+- Bloodline
+	- Scaled Body - Grant protection
+	- Paralyse Spell
+	- Grow Claws
+
+- Originally:
+	- Rebirth, harvest, fertility
+	- Priestess
+End::
+
+MINOTAUR::
+https://en.wikipedia.org/wiki/Minotaur
+
+- Bloodline
+	- Strength Buffs
+	- Stength Spells
+End::
+
+End::
+
+ITEMS::
+Lampad - Lampad Staff/ Wand / Scepter
+https://en.wikipedia.org/wiki/Lampad
+
+- Lampad Staff
+	- Reveal / See Invisible
+	- Illumination
+	- Dispel Magic
+	- Ability to Hurt ghosts
+
+	- Later:
+		- Mind Affecting Spells.
+
+	- Generic Fey Stuff for filler:
+		- Spell or Magic Resistance
+		- Invisibility
+		- Dodge and flexibility
+End::
+
+Bloodlines::
+- Traits
+	- Acidic Blood
+	- Ear-Piercing Scream / Sonic Screech Ability
+	- Vampiric Drain / Exhaust / Fatigue Abilities
+
+- Bloodlines:
+	- Various Fey and Nymph Assosiations, Nereid and Dryads
+	- Abyssal:
+		- https://www.d20pfsrd.com/classes/core-classes/sorcerer/bloodlines/bloodlines-from-paizo/abyssal-bloodline/
+		- Traits:
+			- Strength
+			- Claws
+			- Acid Blood
+			- Immunity and resistance to electricity and poison
+		- Spells:
+			- Cause Fear
+			- Strength Blessing
+	- Underground Fey mix:
+		- Traits:
+			- See in the dark.
+			- Immunity and resistance to poison
+			- Reveal / See Invisible
+			- Generic Fey Stuff for filler:
+				- Spell or Magic Resistance
+				- Invisibility
+				- Dodge and flexibility
+			- Earth Spells?
+	- Storm Fey:
+		- https://www.d20pfsrd.com/classes/core-classes/sorcerer/bloodlines/bloodlines-from-paizo/stormborn-bloodline/
+	- Half Minotaur
+		- Traits:
+			- Mostly Minotaur, but with human head, but with horns.
+			- Strength
+		- Spells:
+			- Cause Fear
+			- Strength Blessing
+End::
+End::
+
+================================
+## CHARACTERS ##::
+================================
+GODS::
+	- Athena
+		- Name:
+			- Potnia Pallas
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Ares
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Apollo
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Artemis
+		- Name:
+			- Potnia Theron
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Hera
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Deus
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Aphrodite
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Former God of Thieves
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+End::
+MORTALS::
+	- Female Minotaur
+		- Name:
+		- Form:
+			- Half Minotaur
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Squire
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+			- Follows the Main Underworld Heroes, unlike the Limp Knight.
+	- Limp Knight
+		- Name:
+		- Form:
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+			- The Full knight, but is disabled, and thus less active, becomes more involved in rallying the Crusaders to the Right cause, the squire follows the Main Underworld Heroes.
+			- Gets Disabled at start of the story.
+	- Chubby Lampad
+		- Name:
+		- Form:
+			- Lampad
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+	- Storm Warrior
+		- Name:
+			- Hero 1
+			- The Captain
+		- Form:
+			- Myrmidon
+		- Skills
+		- Languages
+		- Equiptment:
+		- Magical Skills:
+		- Notes:
+End::
+End::
+
+================================
+## SPECIES ##::
+================================
+- Humans
+- Fey / Half Fey
+	- Lampads,
+		- Underground Fey Bloodlines
+	- Medusa,
+		- Underground Fey Bloodlines
+	- Maenad,
+		- Alchohol tolerance
+		- Underground Fey Bloodline in the underworld ones.
+	- Oread,
+		- Underground Fey Bloodline a little creeping in, with some overlap in traits already.
+		- Image Inspiration: -\ oread_commission_by_motolog_dhpe1so
+- Minotaurs / Half Minotaurs
+	- Half Minotaur Bloodlines
+- Myrmidon
+	- Abyssal Bloodlines
+	- Storm Fey Bloodlines
+	
+- Harpy
+- Cyclops
+- Satyrs
+End::
+
+================================
+## MONSTERS ##::
+================================
+- Minotaurs
+- Hydras
+- Cyclops
+- Harpy
+- Satyrs
+- Manticore
+
+- Automaton
+	- Talos
+	- Galatea
+	- Khalkotauroi (Bronze Bulls)
+
+Trash/Creeps Mob Groups:
+Asphodel Meadows:
+	- Salamander
+	- Asphodel Dryad
+	- Shades
+	
+Underground:
+	- Manticores,
+	- Cyclops?
+	- Oreads,
+	- Hydras,
+	- Automaton
+
+Grasslands: Witches and Knights
+- Take what Crusader content is not used for Unit for faction.
+Witches:
+	- Dryads,
+	- Witches,
+	- Maenad,
+	- Satyrs,
+	- Alraune
+	- Enchantress
+Knights:
+	- Valravn
+	- Valravn Knight
+	- Black Knight
+	- Knight-errant
+	
+Darklands: / Cut, might be a faction of its own
+	- Berserkers
+	- Pesta
+	- Witch
+	- Wight
+Mountains:
+	- Griffins
+	- Wizard
+End::
+
+================================
+## LOCATIONS ##::
+================================
+	- Palace of the Lampads:
+		- Grand Temple to the lampad feys
+		- Has minor shrines to other underworld gods also.
+			- Night, Darkness and Moon deities and personification , aka Nyx, Erebus, Selene
+End::
+
+================================
+## LANDSCAPES ##::
+================================
+	- Asphodel Meadows,
+		- Mix of flower meddows of Asphodelus and fiery imagery.
+			- https://en.wikipedia.org/wiki/Asphodelus
+			- https://en.wikipedia.org/wiki/Asphodel_Meadows
+	- Cavey place,
+		- Generic underground place,
+		- should have mushrooms, and light sources of some kind.
+End::
+
+================================
+## HISTORY ##::
+================================
+- Originally Neutral, takes in Various People, feys and half feys, grows, underground assossitaions are always there, but not much dominant.
+- Eventual Fall and becomes and underground sosiety, which later falls, and becomes a plane of its own, at its worst, eventual death of the dark god, shatters the plane and the process of fragmentation and change begins.
+- Eventually the old post shattering kingdoms fall, and new era begins. Many of them republics.
+End::
+
+================================
+## STORY ##::
+================================
+- Hero 1, is a captain that is investigating some Fiends, where they come across the knight and squire, who reveal that they ended up there thought a portal, investigating fiends themselves on their end. Being interrogated, they give what info they know, giving her a lead, which they follow, which clears the knights of trouble as the fiends comfirm the knights story thought the shouting, after clearing out the local fiends, they follow a lead away, to the next base.
+
+Pick up the minotaur and Lampad along the way.
+
+After attacking the fiend base, they discover the blessed metal of Deus Moloch, which thought certain forms of magic, can be dated to 500 years after his death. Sending things for a twister. During all of this they overhear that the fiends, celebrate the oncoming crusade force, which is strange, as that usually means problems for them. They theorise that what will happend is that it is very likely that the crusade force, will target the underground neutral / surface city where their is kept a bones of dead saint. The Crusade plans are very likely they summarise that the crusader capture the bones and the city, before going underground into the tunnels, where the heroes know the fiends have set a trap to close one of the tunnels to the more hostile parts of the underground realm, forcing the crusaders to crusade in to the otherwise neutral parts. The Neutrals being attacked and slaughtered, will rally to the newely portclaimed underground high king god, the New Dark Ruler of the Underworld for survival, kickstarting the wars again.
+
+The Crusade war god have never cared enough about who in the underground he has killed, so him going along with this rather than a more direct route seems fairly logical, but the other gods should have noticed, unless they where convinced this was the best way.
+
+They also bring the blessed metal of deus moloch to the palace of the lampads, liberating it from the fiends along the way, who are unusually aggressive, in the move, which is very wierd. The Lampads, investigating the blessed metal, comes to the conclussion that contrary to popular belief of deus moloch dying when he was devoured or forced into Potnia Theron, he was still alive, which is what most likely causing all her rage and insanity, she has a living god inside of her, not good. At that moment, they attempt to summon the brother apollo, but during the summoning are attacked by a kombined force of fiends and crusaders, led by an angel. When they summon apollo, who then summons Potnia Pallas, they confront wipe out the fiends and confront the crusaders and the angel, who reveal he is acting on the orders of the war god, to destroy the metal, Potnia Pallas examins the blessed metal and is forced to accept the truth that deus moloch was alive up 500 years after his supposed death, and that this has been hidden from her, Potnia Pallas in her anger is about to strike the angel down, for attempting to hid the truth, but the angel is suddenly protected by the war god. The War god, comfirms he knew all along, that he is not fully dead, but kept that a secret since, that kept her anger focused on Potnia Theron, and not working out how to heal her, which would have made her saner, and made the underground better and less hostile, and less places to conquer. He then departs taking the angel and the army with him.
+
+After that they strategise and realise that the metal can be made into a special syringe, that can pierce Potnia Theron, and be made to deliever poisen, that will finally kill the parasitic remains of deus moloch, giving Potnia Theron full sanity and painless existiance for the first time in millenias. They then set of to accomplish the tasks, the gods head of to stop the crusade as much as possible, one part goes to the cyclopes to forge the syringe, and the other to stop the siege, then open the pass that has to be obviously trapped by the fiends so that a good force can go and attack the bad parts of the underground, and stop the assention of a dark king of the underworld.
+End::
+
+================================
+## INGAME FACTIONS ##::
+================================
+-:- Underworld / Greeks -:- ::
+	- Unit Aspects
+		- Mechanicals,
+			- Flamethrowers, Ships, Automatons, Cyclopian Engineers, Defensive Buildings
+		- Monsters / Myth units,
+			- Minotaurs, Harpies, Cyclops, Lampads, Medusa, Maenad, Lightning Warriors / Myrmidon.
+		- Casters,
+			- Lampads, Medusa, Maenad, Oread
+	- Buildings:
+		- Academy
+		- Palace
+		- Workshop
+		- Lyceum
+		- Shipyard
+	- Units:
+		- Hoplite / Phalanx / Pikeman
+			- Use Konos Helm?
+		- Catahracts
+			- Hetairoi / Companion cavalry / Tech / Unit?
+				- Have them be a lower unit? Hetairoi is from earlier than Catahracts,
+				- Could be nice nod to the Iranian and the Underworld Theme, with the Catahracts being revived by them after all the losses from the various Underworld Lords campaign.
+		- Harpies
+			- Basic Flying Unit?
+		- Cyclops
+			- Siege or engineer variant?
+			- Engineer variant?
+			- Should appear in various places also, trast mobs, vendors, blacksmiths, etc
+		- Minotaurs
+			- Strong Anti Infantry unit?
+		- Medusa / Medusa masked Priestess
+			- Caster
+		- Lampads
+			- Caster
+		- Lightning Warriors / Myrmidon
+			- Anti Infantry and Cavalry unit?
+			- Disruption again?
+			- The Lightning Warriors are an echo of Deus Molochs History as a great sky father, rather than a debased god of sacrifice.
+			- After his death, the cult of Deus Moloch lost the primacy, but true lightning warriors became rarer, harder art to master.
+			- Maybe make it a hero?
+			- A bit of an odd ball out theme wise, but can make it work, another echo of old.
+			- https://en.wikipedia.org/wiki/Myrmidons
+				- Need a Name, Myrmidons can work.
+		- Dromon
+			- Medium Ship
+			- Warship
+		- Maenad
+			- More Nature focused variants of nymphs,
+			- An upgrade Maybe?
+		- Oread
+			- can be used as a filler for a god, maybe Aphrodite? If not Used, then can be used as a Trash Mob.
+			- Oread are Mountain Nymphs, so "Rock" assosations, given the Underworlds, underground status, they fit.
+		- Warlock
+			- If Cult of Deus Moloch does not grant Minotaur or beast, then Warlock can be the unit if a caster is required.
+			- But the Unit is best reserved for a Fiend, as Warlock is a pretty darkish name, less fitting of the Greek monsters and underworld theme.
+				- Not Entirly ill fitting, as the Legacy of Deus Moloch is large and dark, but the underworld is shifting towards neutral.
+		- Automatons
+		- Greek Fire units
+			- Ships,
+			- Flamethrower units,
+			- Flamethrowing Siege Units.
+	- Gods:
+		- Cult of Deus Moloch
+			- Evil, maybe have some warlocks in this version as a unit?
+			- Considered a dead god, but is still remebered and the cult is center of woreship for his successors.
+			- Focus is Beasts and monsters, more of the evil versions, power, etc.
+				- Give the Cyclops upgrade for minotaurs? Harder hitting variants?
+		- Arges the Cyclops god or Prometheus? Mix?
+		- Potnia Theron
+			- Have Medusas as priestess / caster unit.
+				- Medusas and Lampad favouring?
+			- Some Minotaur and cyclop support as well, plus maybe acidic blood upgrade?
+			- Focus is monsters, as she comes wilderness goddess,
+		- Dionysus like figure?
+			- Takes over as the main supporters of Minotaurs after the death of Deus Moloch
+			- Maybe some Maenad as a caster unit.
+		- Hecate like figure,
+	 - Abandoned Gods:
+		- Potnia Pallas
+		- Apollo like god?
+		- Most of the Crusaders Gods.
+	- Notes and / or Influences:
+		- Have basic units use Konos helmet?
+			- Hoplite / Phalanx / Pikeman
+		- Have Cavalry Units?
+			- Catahracts,  Hetairoi
+		- Have Greek Automatons, Engineers and fire weapons?
+			- Automaton
+				- Talos
+				- Galatea / Tech or Unit
+			- Engineer "Caster?"
+			- Flamethrower Unit (Greek Fire)
+		- Building names like: 
+			- Academy, Palace, Lyceum, 
+			- Workshop, Shipyard
+		- Have Cyclops be an upgrade to Minotaurs?
+		- Mix in Styria with names like Styx
+		- Greek Influence, throw in some Persian also at times if it fits.
+		- https://en.wikipedia.org/wiki/Argyraspides
+		- https://en.wikipedia.org/wiki/Leukaspides
+		- https://en.wikipedia.org/wiki/Chalkaspides
+	
+		- https://en.wikipedia.org/wiki/Koinon
+		- https://en.wikipedia.org/wiki/Polemarch
+		- https://en.wikipedia.org/wiki/Tagus_(title)
+		- https://en.wikipedia.org/wiki/Navarch_(Sparta)
+		- https://en.wikipedia.org/wiki/Strategos
+		- https://en.wikipedia.org/wiki/Lochagos
+		- https://en.wikipedia.org/wiki/Tagmatarchis
+End::
+-:- Crusaders -:- ::
+	- Unit Aspects:
+		- Magically or blessed units?
+		- More Biological, but also magical?
+		- Maybe some gunpowder units?
+			- Have starting unit be a ranged gunner?
+			- siege is a portable anti personel wagon and a bombard version,
+			- Wagenburg / Gunpowder Unit?
+		- Mechanicals,
+			- Ships, Defensive Buildings
+		- Monsters / Myth units,
+			- Enchantress, Unicorn Rider, Green Knight, Undine
+		- Casters,
+			- Oracle / Pythia / Sibyl / Star Maidens, Priest, Wizard, Enchantress, Undine?
+	- Buildings:
+		- Workshop
+		- University
+		- Hospital
+	- Units:
+		- Archers
+		- Crossbowmen
+		- Handgunners
+		- Grenadiers
+		- Pikeman
+		- Men at Arms
+		- Knight
+		- Crusader
+		- Oracle / Pythia / Sibyl / Star Maidens
+			- https://en.wikipedia.org/wiki/Pythia
+			- https://en.wikipedia.org/wiki/Sibyl
+			- https://en.wikipedia.org/wiki/Pleiades_(Greek_mythology)
+			- If not universal Unit, should be apollo based.
+		- Priest
+			- Inquisitor Upgrade?
+				- Thaumatologist? Aka Miracle Worker.
+					- More Divine Source for the Magic, Maybe a Wizard Upgrade for Ares or something?
+			- Maybe not have one called it, given that there will be questions, inregards to what they represent, given that they would not represent all.
+		- Wizard
+			- https://en.wikipedia.org/wiki/Sorcery_(goetia)
+		- Unicorn Rider
+		- Green Knight
+			- https://en.wikipedia.org/wiki/Green_Knight
+			- Nature Cavalry Rider
+			- Tech Ideas:
+				- Bleeding lance
+					- https://en.wikipedia.org/wiki/Fisher_King#Bleeding_lance
+					- Maybe Along with the Green Knight unit?
+		- Enchantress
+			- https://en.wikipedia.org/wiki/Magician_(fantasy)
+			- Aphrodite Unit?
+		- Undine
+			- https://en.wikipedia.org/wiki/Undine
+			- https://en.wikipedia.org/wiki/Nereids
+			- https://en.wikipedia.org/wiki/Naiad
+			- https://en.wikipedia.org/wiki/Potamides
+			- https://en.wikipedia.org/wiki/Oceanids
+		- Alchemist
+		- Mystic
+			- https://en.wikipedia.org/wiki/Christian_mysticism
+			- Mystics where a thing, might be used for a free unit.
+			- Thaumatologist? Aka Miracle Worker, can be an Upgrade or ability.
+			- The Classicals are Female Virgins, but Male Monks pops up also, so can either and more religious, a good Ares as alternate to the knight romance.
+		- Palatine
+			- Palatine could be another type of Paladin, that splits off earlier, or the Paladin took it in a different direction. Be an East vs West thing.
+			- https://en.wikipedia.org/wiki/Palatine
+			- Paladins
+				- https://en.wikipedia.org/wiki/Paladin
+			- https://en.wikipedia.org/wiki/Galahad
+				- Healing
+				- Exorcism
+				- Talk to Ghosts / interact with the dead, hurt undead
+			- Tech Ideas:
+				- Knights Errant
+					- https://en.wikipedia.org/wiki/Knight-errant
+					- if Paladin direction
+	- Gods:
+		- Ares,
+		- Potnia Pallas,
+		- Apollo like god?
+			- Oracle
+		
+		- Former God of Thieves,
+			- Palatine or Paladin
+		- Aphrodite,
+			- Enchantress
+		- Hera,
+		- Lady of the Lake,
+			- Undine?
+			- Unicorn Rider?
+	- Abandoned Gods:
+	- Notes:
+		- Any of the Units or Ideas not used can be recycled as trash mobs.
+		- Maybe some Rome, Medieval Roman / Byzantine, Romanesque? Something to prevent them from being generic Europe soup-mix.
+		- https://en.wikipedia.org/wiki/Romanesque_architecture
+		- Maybe have the Major God affect the style a little more? The Different direction things have gone under them?
+		- Ares having more Medieval, etc, 
+		- Potnia Pallas, having more Medieval Roman / Byzantine feel, or Renaissance or sort knowledge themed, or a mixture / somewhere inbetween? With Apollo having the other influence.
+		- 2 Sides, 1 More Knight themed the other more Medieval Roman / Byzantine and Knowledge themed.
+			- Apollo and Potnia Pallas being more knowledge, but Ares has also some culture in form the knight romances in addition to war, 
+			- while Potnia Pallas is more caluating form of war and should have some Gunpowder units maybe? Something to represent this. Apollo, Ballistas and Gastraphetes (he is archery after all so ballistics), Ares is the more masculine knights and etc, balances things out a little.
+				- https://en.wikipedia.org/wiki/Ballista
+				- https://en.wikipedia.org/wiki/Gastraphetes
+				- https://en.wikipedia.org/wiki/Polybolos
+				- https://en.wikipedia.org/wiki/Scorpio_(weapon)
+				- https://en.wikipedia.org/wiki/Cheiroballistra
+		- https://en.wikipedia.org/wiki/Matter_of_Britain
+		- Notes on Knighthood:
+			- https://www.reddit.com/r/AskHistorians/comments/dcslfi/how_did_one_become_a_knight_in_the_medival_ages/
+			- https://www.reddit.com/r/AskHistorians/comments/bg7b2n/who_had_knighting_privileges_is_medieval_europe/
+			- https://www.reddit.com/r/AskHistorians/comments/1f0cni4/im_a_clever_and_ambitious_peasant_who_has_just/
+End::
+-:- Fiends / Other Evil -:- ::
+	- Notes and / or Influences:
+		- Mix in abrahamic and greek?
+		- Satyrs for the classical devilry origins.
+		- They Where a thing before Deus Moloch, but he is what super charged them to be a real force.
+		- https://en.wikipedia.org/wiki/Pazuzu
+		- https://en.wikipedia.org/wiki/Nergal
+		- https://en.wikipedia.org/wiki/Baal
+		- https://en.wikipedia.org/wiki/Gargoyle_(monster)
+		- Use white or pale horses also into the mix?
+		- Should have other influences also, to make things more interesting, messopotamian, maybe some iranian, etc.
+			- They will still be a demon faction, but will have a more expanded roster and feel than just the sterotypes.
+		- https://en.wikipedia.org/wiki/Demon
+		- https://www.pinterest.co.uk/pin/19421842137962319/
+		- Mesopotamian, plus maybe others also? Indian or South East Asia for the neat spires for the demons?
+	- Gods:
+		- Cult of Deus Moloch
+			- It left its mark everywhere. Be a minor thing, the cult still has powers, but its more thought several minor beings playing for power.
+		- A Monster god, a base of some of the monster traits.
+			- Maybe also some relation to the Clear Devil god,
+		- Clear Devil God,
+			- main Evil type camp, considered the leading figure,
+		- Succubus God,
+			- Classical beauty type, should be decendant from Hathor the daughter? / Aphrodite, where she got the beauty.
+			- Hathor the daughter? / Aphrodite Should be the Mother or Grandmother
+			- still has good relations with Hathor the daughter? / Aphrodite, they enjoy each others company, even if covert and in disguises.
+		- Satyr King maybe?
+			- he brings the classical satyrs, if this is not brought in from other places, say he was rejected and thus found his camp with the Fiend, as somebody who rejected the agency of others.
+		- Pazuzu / Other demons and beings
+			- https://en.wikipedia.org/wiki/Pazuzu
+			- https://www.pinterest.co.uk/pin/19421842137962319/
+			- Should have other influences also, to make things more interesting, messopotamian, maybe some iranian, etc.
+			- https://en.wikipedia.org/wiki/Demon
+		- Lamashtu
+			- https://en.wikipedia.org/wiki/Lamashtu
+			- head of a lion, the teeth of a donkey, naked breasts, a hairy body, hands stained (with blood?), long fingers and fingernails, and the feet of a bird with sharp talons.
+End::
+End::

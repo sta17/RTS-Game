@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ActionData" load_steps=5 format=3 uid="uid://c6aumkwgbt3te"]
+
+[ext_resource type="Resource" uid="uid://5ow6yv46g4fs" path="res://Scenes/ActionCategories/Movement.tres" id="1_bsu6d"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_nx3uh"]
+[ext_resource type="Texture2D" uid="uid://3i21k1ioxcen" path="res://Assets/Public Domain/Kenney/64x64/flag_square.png" id="2_tlry8"]
+[ext_resource type="Script" path="res://Scripts/UI/action_data.gd" id="3_qn6md"]
+
+[resource]
+script = ExtResource("3_qn6md")
+id = 5
+name = "Patrol"
+icon = ExtResource("2_tlry8")
+tooltip = ""
+properties = {}
+categories = Array[ExtResource("1_nx3uh")]([ExtResource("1_bsu6d")])

@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxs8hooo83fka"]
+
+[ext_resource type="Script" path="res://Scripts/SpawnPoint.gd" id="1_dncef"]
+[ext_resource type="PackedScene" uid="uid://b2pfw13noa666" path="res://Assets/Mine/Models/Start Circle.tscn" id="2_4bnr3"]
+
+[node name="SpawnPoint" type="Node3D"]
+script = ExtResource("1_dncef")
+
+[node name="Start Circle" parent="." instance=ExtResource("2_4bnr3")]

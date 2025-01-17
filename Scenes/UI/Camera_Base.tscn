@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://e20ke7ip3iit"]
+
+[ext_resource type="Script" path="res://Scripts/RTS_Camera.gd" id="1_naa6r"]
+[ext_resource type="PackedScene" uid="uid://bc0uds13urd5u" path="res://Scenes/AOETargetting/AOE.tscn" id="2_jwa2m"]
+
+[node name="CameraBase" type="Node3D"]
+script = ExtResource("1_naa6r")
+
+[node name="CameraSocket" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 7.63909, 5)
+
+[node name="PlayerCam" type="Camera3D" parent="CameraSocket"]
+current = true
+
+[node name="Area3D" parent="." instance=ExtResource("2_jwa2m")]

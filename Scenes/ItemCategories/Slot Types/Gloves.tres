@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://bjr8g8ichq00h"]
+
+[ext_resource type="Texture2D" uid="uid://c3ocnddox6ed4" path="res://Assets/Mine/UI/Gloves.png" id="1_7bumv"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_e1fpq"]
+
+[resource]
+script = ExtResource("2_e1fpq")
+name = "Gloves"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_7bumv")

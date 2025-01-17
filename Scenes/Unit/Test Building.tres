@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Unit_data" load_steps=3 format=3 uid="uid://ctpm6x1kamsu8"]
+
+[ext_resource type="Script" path="res://Scripts/Map Objects/unit_data.gd" id="1_drs2h"]
+[ext_resource type="Texture2D" uid="uid://kubdbmcqgm5f" path="res://Assets/Mine/Icons/B 64.png" id="2_sbber"]
+
+[resource]
+script = ExtResource("1_drs2h")
+unit_icon = ExtResource("2_sbber")
+name = "Building"
+hp = 100.0
+hp_regen = 1.0
+aether = 0.0
+aether_regen = 0.0
+attack = 1.0
+attack_cooldown = 1.0
+attack_range = 1.0
+defense = 1.0
+speed = 0.0
+color = Color(0, 0, 0, 1)

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://dqn2wdgj4uf31"]
+
+[ext_resource type="Texture2D" uid="uid://dvt071pdjym5n" path="res://Assets/Unity Assets/Clean Vector Icons/T_1_sword90_.png" id="1_a6led"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="1_gfr2q"]
+
+[resource]
+script = ExtResource("1_gfr2q")
+name = "Weapons"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_a6led")

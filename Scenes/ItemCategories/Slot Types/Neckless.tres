@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemCategory" load_steps=3 format=3 uid="uid://cin2lt42whreb"]
+
+[ext_resource type="Texture2D" uid="uid://buse3750rjhur" path="res://Assets/Mine/UI/Ring.png" id="1_e01ou"]
+[ext_resource type="Script" path="res://Scripts/Item/item_category.gd" id="2_6650i"]
+
+[resource]
+script = ExtResource("2_6650i")
+name = "Neckless"
+color = Color(1, 1, 1, 1)
+icon = ExtResource("1_e01ou")

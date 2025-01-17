@@ -1,0 +1,1003 @@
+[gd_scene load_steps=46 format=3 uid="uid://djqsxq0cdjjrd"]
+
+[ext_resource type="Script" path="res://Scripts/Player_interface.gd" id="1_680r0"]
+[ext_resource type="Script" path="res://Scripts/UI/FPSMETER.gd" id="2_v7cy3"]
+[ext_resource type="Texture2D" uid="uid://bh22wmuvju5ue" path="res://Assets/Unity Assets/Cursors 64/Arrow.png" id="2_wyrhp"]
+[ext_resource type="Texture2D" uid="uid://dfd3pvrdigbx3" path="res://Assets/Mine/UI/ui_selct_dragbox01.png" id="3_ia2wm"]
+[ext_resource type="Texture2D" uid="uid://d3csw3t81shjx" path="res://Assets/Unity Assets/Cursors 64/Arrow_Loot.png" id="3_xc3qh"]
+[ext_resource type="Texture2D" uid="uid://cggg04s3sveqs" path="res://Assets/Unity Assets/Cursors 64/Cursor_book.png" id="4_yw1jl"]
+[ext_resource type="Script" path="res://Scripts/building_placer.gd" id="5_njhj4"]
+[ext_resource type="Texture2D" uid="uid://cdryedo7xfq23" path="res://Assets/Unity Assets/Cursors 64/Cursor_Flask.png" id="5_pbns6"]
+[ext_resource type="Texture2D" uid="uid://0avwy5kqcr3k" path="res://Assets/Unity Assets/Cursors 64/Cursor_Settings.png" id="6_2xxwp"]
+[ext_resource type="Shader" path="res://Shaders/Building Placement.gdshader" id="6_m1rmy"]
+[ext_resource type="Texture2D" uid="uid://7gcam6bm7m7x" path="res://Assets/Unity Assets/Cursors 64/Arrow_Cross_Smaller.png" id="7_opugs"]
+[ext_resource type="Texture2D" uid="uid://dj26qrsbk2umi" path="res://Assets/Unity Assets/Cursors 64/Arrow_Compass.png" id="8_gn8qh"]
+[ext_resource type="Texture2D" uid="uid://dewlhn6xtp463" path="res://Assets/Public Domain/Items/Frame.png" id="10_bevrk"]
+[ext_resource type="Script" path="res://Scripts/DropItemOnGround.gd" id="10_v0tub"]
+[ext_resource type="PackedScene" uid="uid://ddlaxwoe3m62t" path="res://Scenes/UI/selection_slot.tscn" id="11_m0yr3"]
+[ext_resource type="Texture2D" uid="uid://4e5kimwla2i5" path="res://Assets/Copy Right - Must Replace/Sicilians_user_interface_image_webp.png" id="11_qey0n"]
+[ext_resource type="Script" path="res://Scripts/UI/StatDisplay.gd" id="12_32y7p"]
+[ext_resource type="Texture2D" uid="uid://cy0xvcgvuxogo" path="res://Assets/Mine/UI/Frame 64.png" id="12_ppfvo"]
+[ext_resource type="Texture2D" uid="uid://gbskcxc7erhg" path="res://Assets/Mine/Godot Helpers/HumanoidIcon 64.png" id="13_xnox8"]
+[ext_resource type="Texture2D" uid="uid://bmx7xu06pmbt" path="res://Assets/Mine/UI/Frame 64 Frame Only.png" id="14_ddxmx"]
+[ext_resource type="LabelSettings" uid="uid://dfaa14rb685rc" path="res://Godot Setting Files/WhiteLabelText.tres" id="15_u3ghi"]
+[ext_resource type="LabelSettings" uid="uid://jod5507bx8i6" path="res://Godot Setting Files/YellowLabelText.tres" id="17_4g7vg"]
+[ext_resource type="Texture2D" uid="uid://0d3i5hmx7ggn" path="res://Assets/Mine/UI/Frame 32 Sword.png" id="19_iyev8"]
+[ext_resource type="PackedScene" uid="uid://cnp2ce2opdday" path="res://Scenes/UI/inv_ui_slot 64.tscn" id="20_sa8kr"]
+[ext_resource type="Theme" uid="uid://drqxr24ly24mt" path="res://Godot Setting Files/General Theme.tres" id="21_2yef1"]
+[ext_resource type="Texture2D" uid="uid://bj78dcpinomcy" path="res://Assets/Mine/UI/Frame Red.png" id="21_8raji"]
+[ext_resource type="Texture2D" uid="uid://cug1ns3lxnk6j" path="res://Assets/Mine/UI/Frame 32 Armor.png" id="21_j45en"]
+[ext_resource type="Texture2D" uid="uid://bhh7e0kyh52rg" path="res://Assets/Mine/UI/Frame Blue.png" id="22_pk22k"]
+[ext_resource type="PackedScene" uid="uid://cl4irapwllp5n" path="res://Scenes/UI/action_ui_slot 64.tscn" id="23_5qttv"]
+[ext_resource type="PackedScene" uid="uid://cjnrna7s0vyot" path="res://Scenes/UI/Tooltip.tscn" id="23_f6du2"]
+[ext_resource type="Texture2D" uid="uid://dsfcakkaldmx7" path="res://Assets/Mine/UI/Frame Green.png" id="23_m8f3e"]
+[ext_resource type="PackedScene" uid="uid://e20ke7ip3iit" path="res://Scenes/UI/Camera_Base.tscn" id="24_spmg8"]
+[ext_resource type="PackedScene" uid="uid://df1xejmi74m51" path="res://Scenes/UI/CharacterInventory.tscn" id="25_myplv"]
+[ext_resource type="Texture2D" uid="uid://caa60elkbsaj7" path="res://Assets/Mine/UI/White Circle 32x32.png" id="25_qkb0x"]
+[ext_resource type="Texture2D" uid="uid://c5tatdb7e5jr6" path="res://Assets/Mine/UI/Arrow Down.png" id="25_qm2cj"]
+[ext_resource type="PackedScene" uid="uid://btrshm4rk47vg" path="res://Scenes/UI/hero_slot.tscn" id="26_w52ur"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_s1yt7"]
+
+[sub_resource type="Animation" id="Animation_avr78"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ui_order/Ground:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ui_order/Hover:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xl8hu"]
+resource_name = "move_order"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ui_order/Hover:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ui_order/Ground:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.3, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "position_3d"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("ui_order/Hover")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = PackedFloat32Array(0, 1, 0, 3, 0, 1, 1, 0, 1.5, 0)
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_gkde6"]
+_data = {
+"RESET": SubResource("Animation_avr78"),
+"move_order": SubResource("Animation_xl8hu")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_380t1"]
+render_priority = 0
+shader = ExtResource("6_m1rmy")
+
+[sub_resource type="BoxMesh" id="BoxMesh_c7tae"]
+material = SubResource("ShaderMaterial_380t1")
+size = Vector3(3, 3, 3)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nrlab"]
+render_priority = 0
+shader = ExtResource("6_m1rmy")
+
+[sub_resource type="PrismMesh" id="PrismMesh_167ti"]
+material = SubResource("ShaderMaterial_nrlab")
+left_to_right = 0.0
+size = Vector3(3, 1, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d7i5h"]
+size = Vector3(3, 3.5, 3)
+
+[node name="Player_interface" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+mouse_filter = 2
+script = ExtResource("1_680r0")
+default_cursor = ExtResource("2_wyrhp")
+coin_cursor = ExtResource("3_xc3qh")
+book_cursor = ExtResource("4_yw1jl")
+bottle_cursor = ExtResource("5_pbns6")
+setting_cursor = ExtResource("6_2xxwp")
+cross_cursor = ExtResource("7_opugs")
+compass_cursor = ExtResource("8_gn8qh")
+CameraBasePath = NodePath("CameraBase")
+ui_dragboxPath = NodePath("CanvasLayer/ui_dragbox")
+ui_order_animplayerPath = NodePath("ui_order/AnimationPlayer")
+panelSectionsPath = NodePath("CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections")
+node_building_placerPath = NodePath("building_placer")
+tooltipPath = NodePath("CanvasLayer/Tooltip")
+mainMenuSectionPath = NodePath("CanvasLayer/Main Menu")
+interface_btn_buildingPath = NodePath("CanvasLayer/place_building_button")
+selectionSlotsContainerPath = NodePath("CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay")
+statDisplayPath = NodePath("CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay")
+itemSlotsContainerPath = NodePath("CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay")
+dropItemGroundPath = NodePath("CanvasLayer/Bottom UI Panel/Screen Drop Section")
+characterInventoryDisplayPath = NodePath("CanvasLayer/HeroInventory/Character_Inventory")
+HeroSlotsContainerPath = NodePath("CanvasLayer/HeroDisplay")
+actionSlotsContainerPath = NodePath("CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay")
+metadata/_edit_lock_ = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="FPSMETER" type="Label" parent="CanvasLayer"]
+offset_right = 64.0
+offset_bottom = 23.0
+text = "FPS: 000"
+script = ExtResource("2_v7cy3")
+
+[node name="Bottom UI Panel" type="Control" parent="CanvasLayer"]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+
+[node name="Screen Drop Section" type="Panel" parent="CanvasLayer/Bottom UI Panel"]
+custom_minimum_size = Vector2(1800, 640)
+layout_mode = 1
+offset_right = 1800.0
+offset_bottom = 640.0
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxEmpty_s1yt7")
+script = ExtResource("10_v0tub")
+
+[node name="Bottom UI Panel" type="Control" parent="CanvasLayer/Bottom UI Panel"]
+texture_filter = 1
+clip_contents = true
+layout_mode = 1
+anchor_top = 0.8
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Panel" type="Panel" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bottom Panel" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel"]
+texture_filter = 1
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+draw_center = false
+
+[node name="Panel Sections" type="Control" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bottom Panel Section 1" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -1637.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_bevrk")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Bottom Panel Section 7" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 163.0
+offset_right = -1394.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_bevrk")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Bottom Panel Section 2" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 406.0
+offset_right = -1140.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_bevrk")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Bottom Panel Section 3" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 660.0
+offset_right = -751.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_bevrk")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Bottom Panel Section 4" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1049.0
+offset_right = -589.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_bevrk")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Bottom Panel Section 5" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1211.0
+offset_right = -366.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_bevrk")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="Bottom Panel Section 6" type="NinePatchRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 1434.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+texture = ExtResource("10_bevrk")
+region_rect = Rect2(0, 0, 32, 32)
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+layout_mode = 0
+offset_left = 410.0
+offset_top = 7.0
+offset_right = 888.929
+offset_bottom = 305.0
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("11_qey0n")
+expand_mode = 3
+
+[node name="TextureRect2" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections"]
+layout_mode = 0
+offset_left = 1053.0
+offset_top = 34.0
+offset_right = 1669.0
+offset_bottom = 417.289
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("11_qey0n")
+expand_mode = 5
+
+[node name="StatDisplay" type="Control" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel"]
+clip_contents = true
+layout_mode = 2
+anchors_preset = 0
+anchor_right = 0.225
+anchor_bottom = 1.0
+offset_right = 0.999969
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("12_32y7p")
+
+[node name="MainColumn" type="GridContainer" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay"]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.401
+anchor_bottom = 1.0
+offset_right = 0.193985
+
+[node name="Frame" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/MainColumn"]
+layout_mode = 2
+size_flags_horizontal = 6
+size_flags_vertical = 6
+texture = ExtResource("12_ppfvo")
+stretch_mode = 5
+
+[node name="Icon" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/MainColumn/Frame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_xnox8")
+stretch_mode = 3
+
+[node name="Frame" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/MainColumn/Frame"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_ddxmx")
+stretch_mode = 3
+
+[node name="Name Field" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/MainColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "12345678912345678"
+label_settings = ExtResource("15_u3ghi")
+horizontal_alignment = 1
+
+[node name="HP Field" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/MainColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "HPHPHP / HPHPHP"
+label_settings = ExtResource("15_u3ghi")
+horizontal_alignment = 1
+
+[node name="AETHER Field" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/MainColumn"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 13
+text = "AETHER / AETHER"
+label_settings = ExtResource("15_u3ghi")
+horizontal_alignment = 1
+
+[node name="Item Description Field" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay"]
+layout_mode = 0
+offset_left = 168.0
+offset_top = 4.0
+offset_right = 401.0
+offset_bottom = 155.0
+theme_override_font_sizes/font_size = 13
+text = "Description:"
+label_settings = ExtResource("15_u3ghi")
+
+[node name="Tooltip" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/Item Description Field" instance=ExtResource("23_f6du2")]
+offset_left = -5.0
+offset_top = -4.0
+offset_right = 238.0
+offset_bottom = 156.0
+
+[node name="VisibleStats" type="Control" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay"]
+layout_mode = 1
+anchor_left = 0.401
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 0.193985
+
+[node name="DamageAndArmor" type="Control" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats"]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 8.0
+offset_top = 28.0
+offset_right = 123.0
+offset_bottom = 143.0
+
+[node name="DamageIcon" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("19_iyev8")
+
+[node name="DamageField" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = 14.0
+offset_right = 112.0
+offset_bottom = 37.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT-TTTT"
+label_settings = ExtResource("17_4g7vg")
+horizontal_alignment = 1
+
+[node name="DamageLabel" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = -4.0
+offset_right = 103.0
+offset_bottom = 19.0
+theme_override_font_sizes/font_size = 13
+text = "Damage:"
+label_settings = ExtResource("15_u3ghi")
+
+[node name="ArmorIcon" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_top = 36.0
+offset_right = 32.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_j45en")
+
+[node name="ArmorField" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = 50.0
+offset_right = 112.0
+offset_bottom = 73.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT-TTTT"
+label_settings = ExtResource("17_4g7vg")
+horizontal_alignment = 1
+
+[node name="ArmorLabel" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/DamageAndArmor"]
+layout_mode = 2
+offset_left = 34.0
+offset_top = 32.0
+offset_right = 90.0
+offset_bottom = 55.0
+theme_override_font_sizes/font_size = 13
+text = "Armor:"
+label_settings = ExtResource("15_u3ghi")
+
+[node name="HeroStats" type="Control" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats"]
+layout_mode = 2
+anchors_preset = 0
+offset_left = 129.0
+offset_top = 17.0
+offset_right = 239.0
+offset_bottom = 146.0
+
+[node name="StrengthIcon" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_right = 32.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("21_8raji")
+
+[node name="Strength Field" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 13.0
+offset_right = 70.0
+offset_bottom = 36.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT"
+label_settings = ExtResource("17_4g7vg")
+horizontal_alignment = 1
+
+[node name="Strength Label" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = -5.0
+offset_right = 83.0
+offset_bottom = 18.0
+theme_override_font_sizes/font_size = 13
+text = "Body;"
+label_settings = ExtResource("15_u3ghi")
+
+[node name="IntIcon" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_top = 36.0
+offset_right = 32.0
+offset_bottom = 68.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("22_pk22k")
+
+[node name="Int Field" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 49.0
+offset_right = 70.0
+offset_bottom = 72.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT"
+label_settings = ExtResource("17_4g7vg")
+horizontal_alignment = 1
+
+[node name="Int Label" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 31.0
+offset_right = 83.0
+offset_bottom = 54.0
+theme_override_font_sizes/font_size = 13
+text = "Mind:"
+label_settings = ExtResource("15_u3ghi")
+
+[node name="AgilityIcon" type="TextureRect" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_top = 72.0
+offset_right = 32.0
+offset_bottom = 104.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("23_m8f3e")
+
+[node name="Agility Field" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 84.0
+offset_right = 70.0
+offset_bottom = 107.0
+theme_override_font_sizes/font_size = 13
+text = "TTTT"
+label_settings = ExtResource("17_4g7vg")
+horizontal_alignment = 1
+
+[node name="Agility Label" type="Label" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/StatDisplay/VisibleStats/HeroStats"]
+layout_mode = 2
+offset_left = 33.0
+offset_top = 67.0
+offset_right = 95.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 13
+text = "Finesse:"
+label_settings = ExtResource("15_u3ghi")
+
+[node name="SelectionDisplay" type="GridContainer" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel"]
+clip_contents = true
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+offset_left = 678.0
+offset_top = 38.0
+offset_right = 1034.0
+offset_bottom = 224.0
+grow_horizontal = 0
+grow_vertical = 0
+columns = 10
+
+[node name="Selection Slot 1" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 2" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 3" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 4" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 5" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 6" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 7" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 8" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 9" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 10" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 11" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 12" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 13" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 14" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 15" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 16" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 17" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 18" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 19" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="Selection Slot 20" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" instance=ExtResource("11_m0yr3")]
+layout_mode = 2
+
+[node name="ItemDisplay" type="GridContainer" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel"]
+layout_mode = 2
+offset_left = 1224.0
+offset_top = 5.0
+offset_right = 1424.0
+offset_bottom = 294.0
+columns = 3
+
+[node name="Control" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" instance=ExtResource("20_sa8kr")]
+layout_mode = 2
+
+[node name="Control2" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" instance=ExtResource("20_sa8kr")]
+layout_mode = 2
+
+[node name="Control3" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" instance=ExtResource("20_sa8kr")]
+layout_mode = 2
+
+[node name="Control4" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" instance=ExtResource("20_sa8kr")]
+layout_mode = 2
+
+[node name="Control5" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" instance=ExtResource("20_sa8kr")]
+layout_mode = 2
+
+[node name="Control6" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" instance=ExtResource("20_sa8kr")]
+layout_mode = 2
+
+[node name="ActionDisplay" type="GridContainer" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel"]
+layout_mode = 0
+offset_left = 1441.0
+offset_top = 6.0
+offset_right = 1787.0
+offset_bottom = 154.0
+columns = 5
+
+[node name="action_ui_slot 64" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 65" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 66" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 67" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 68" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 69" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 70" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 71" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 72" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="action_ui_slot 73" parent="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ActionDisplay" instance=ExtResource("23_5qttv")]
+layout_mode = 2
+
+[node name="ui_dragbox" type="NinePatchRect" parent="CanvasLayer"]
+offset_left = 1537.0
+offset_top = 43.0
+offset_right = 1745.0
+offset_bottom = 151.0
+texture = ExtResource("3_ia2wm")
+patch_margin_left = 4
+patch_margin_top = 4
+patch_margin_right = 4
+patch_margin_bottom = 4
+
+[node name="place_building_button" type="Button" parent="CanvasLayer"]
+offset_left = 1527.0
+offset_top = 765.0
+offset_right = 1703.0
+offset_bottom = 800.0
+tooltip_text = "Place Building with a left click"
+mouse_filter = 1
+theme = ExtResource("21_2yef1")
+text = "Place Building
+"
+
+[node name="Main Menu" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -50.5
+offset_right = 31.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="NinePatchRect" type="NinePatchRect" parent="CanvasLayer/Main Menu"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("10_bevrk")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="GridContainer" type="GridContainer" parent="CanvasLayer/Main Menu/NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -31.0
+offset_top = -50.5
+offset_right = 31.0
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Option_Button" type="Button" parent="CanvasLayer/Main Menu/NinePatchRect/GridContainer"]
+layout_mode = 2
+text = "Option"
+
+[node name="Save_Button" type="Button" parent="CanvasLayer/Main Menu/NinePatchRect/GridContainer"]
+layout_mode = 2
+text = "Save"
+
+[node name="Exit_Button" type="Button" parent="CanvasLayer/Main Menu/NinePatchRect/GridContainer"]
+layout_mode = 2
+text = "Exit"
+
+[node name="Tooltip" parent="CanvasLayer" instance=ExtResource("23_f6du2")]
+offset_left = 1618.0
+offset_top = 466.0
+offset_right = 1738.0
+offset_bottom = 586.0
+
+[node name="HeroInventory" type="Control" parent="CanvasLayer"]
+custom_minimum_size = Vector2(732, 485)
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -366.0
+offset_top = -270.0
+offset_right = 366.0
+offset_bottom = 215.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Character_Inventory" parent="CanvasLayer/HeroInventory" instance=ExtResource("25_myplv")]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -366.0
+offset_top = -242.5
+offset_right = 366.0
+offset_bottom = 242.5
+mouse_filter = 1
+tooltipPath = NodePath("../../Tooltip")
+input_handlerPath = NodePath("../../..")
+
+[node name="HeroDisplay" type="GridContainer" parent="CanvasLayer"]
+custom_minimum_size = Vector2(64, 64)
+offset_left = 1.0
+offset_top = 24.0
+offset_right = 65.0
+offset_bottom = 631.0
+
+[node name="Hero Slot" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot2" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot3" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot4" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot5" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot6" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot7" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot8" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot9" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot10" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot11" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot12" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot13" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot14" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="Hero Slot15" parent="CanvasLayer/HeroDisplay" instance=ExtResource("26_w52ur")]
+layout_mode = 2
+
+[node name="CameraBase" parent="." instance=ExtResource("24_spmg8")]
+
+[node name="ui_order" type="Node3D" parent="."]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ui_order"]
+root_node = NodePath("../..")
+libraries = {
+"": SubResource("AnimationLibrary_gkde6")
+}
+
+[node name="Hover" type="Sprite3D" parent="ui_order"]
+transform = Transform3D(3, 0, 0, 0, 3.5, 0, 0, 0, 3, 0, 3, 0)
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("25_qm2cj")
+
+[node name="Ground" type="Sprite3D" parent="ui_order"]
+transform = Transform3D(4, 0, 0, 0, -1.74846e-07, 4, 0, -4, -1.74846e-07, 0, 1, 0)
+modulate = Color(1, 1, 1, 0)
+texture = ExtResource("25_qkb0x")
+
+[node name="building_placer" type="Node3D" parent="."]
+script = ExtResource("5_njhj4")
+
+[node name="Height" type="Node3D" parent="building_placer"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+
+[node name="building_preview" type="MeshInstance3D" parent="building_placer/Height"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5527, 0)
+instance_shader_parameters/instance_color_01 = Color(0.14902, 0.74902, 0.211765, 0.392157)
+mesh = SubResource("BoxMesh_c7tae")
+skeleton = NodePath("../..")
+
+[node name="Roof" type="MeshInstance3D" parent="building_placer/Height/building_preview"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, 0)
+instance_shader_parameters/instance_color_01 = Color(0.14902, 0.74902, 0.211765, 0.392157)
+mesh = SubResource("PrismMesh_167ti")
+skeleton = NodePath("../../..")
+
+[node name="Area3D" type="Area3D" parent="building_placer/Height"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5527, 0)
+collision_layer = 2
+collision_mask = 6
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="building_placer/Height/Area3D"]
+shape = SubResource("BoxShape3D_d7i5h")
+
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel" to="." method="_on_bottom_ui_panel_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel" to="." method="_on_bottom_ui_panel_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel" to="." method="_on_panel_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/Panel Sections" to="." method="_on_panel_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" to="." method="_on_selection_display_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay" to="." method="_on_selection_display_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay/Selection Slot 1" to="." method="_on_selection_slot_1_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/SelectionDisplay/Selection Slot 1" to="." method="_on_selection_slot_1_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_exited" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay" to="." method="_on_panel_mouse_exited"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay/Control" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay/Control2" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay/Control3" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay/Control4" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay/Control5" to="." method="_on_panel_mouse_entered"]
+[connection signal="mouse_entered" from="CanvasLayer/Bottom UI Panel/Bottom UI Panel/Panel/Bottom Panel/ItemDisplay/Control6" to="." method="_on_panel_mouse_entered"]
+[connection signal="pressed" from="CanvasLayer/Main Menu/NinePatchRect/GridContainer/Option_Button" to="." method="_on_option_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main Menu/NinePatchRect/GridContainer/Save_Button" to="." method="_on_save_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/Main Menu/NinePatchRect/GridContainer/Exit_Button" to="." method="_on_exit_button_pressed"]
